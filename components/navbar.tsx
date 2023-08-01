@@ -11,11 +11,13 @@ import { motion } from 'framer-motion';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+  console.log('pathname', pathname)
   return (
     <section>
-      <nav className='container flex items-center  mt-8'>
-        <Brand />
-        <NavContent />
+      <nav className={`container flex items-center mt-8 navbar-custom ${pathname !== '/' ? 'navbar-light' : ''}`}>
+        <Brand pathname={pathname} />
+        <NavContent pathname={pathname} />
         <Action />
         {!isMenuOpen ? (
           <AlignJustify
@@ -37,18 +39,14 @@ export default function Navbar() {
   );
 }
 
-const NavContent = () => {
-  const pathname = usePathname();
-
+const NavContent = ({pathname}:{pathname: string}) => {
   return (
     <>
-      <ul className='flex items-center justify-center gap-10 font-medium grow whitespace-nowrap max-lg:hidden
-
-'>
+      <ul className={`flex items-center justify-center gap-10 font-medium grow whitespace-nowrap max-lg:hidden ${pathname === '/' ? 'text-white' : ''}`}>
         {nav.map((_) => (
           <li key={_.name}>
             <div
-              className={cn('capitalize relative', {
+              className={cn('relative', {
                 'opacity-60': !(
                   (_.name !== 'home' && pathname.includes(_.href)) ||
                   (pathname === '/' && _.name === 'home')
@@ -59,7 +57,7 @@ const NavContent = () => {
               (pathname === '/' && _.name === 'home') ? (
                 <motion.div
                   layoutId='navbar'
-                  className='absolute w-full h-1 rounded-full -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent '
+                  className='absolute left-1/3 w-4 h-1 rounded-full -bottom-1 bg-primary/100'
                 />
               ) : null}
               <Link className='' href={_.href}>
@@ -79,7 +77,7 @@ const NavContentMob = ({ setIsMenuOpen }: { setIsMenuOpen: Function }) => {
       <ul className='container absolute inset-x-0 flex flex-col items-start font-medium lg:hidden'>
         {nav.map((_) => (
           <li onClick={() => setIsMenuOpen(false)} key={_.name}>
-            <h3 className='capitalize'>
+            <h3>
               <Link href={_.href}>{_.name}</Link>
             </h3>
           </li>
@@ -90,20 +88,18 @@ const NavContentMob = ({ setIsMenuOpen }: { setIsMenuOpen: Function }) => {
 };
 
 const nav = [
-  { name: 'home', href: '/' },
-  { name: 'how it works', href: '/#how-it-works' },
-  { name: 'marketplace', href: '/marketplace' },
-  { name: 'About Us ', href: '/about' },
-  { name: 'learn ', href: '/learn' },
+  { name: 'Home', href: '/' },
+  { name: 'How it works', href: '/#how-it-works' },
+  { name: 'Marketplace', href: '/marketplace' },
+  { name: 'About us ', href: '/about' },
+  { name: 'Learn ', href: '/learn' },
 ];
 
 const Action = () => {
   return (
-    <div className='flex items-center bg-primary/5 cursor-pointer hover:bg-primary/10 transition-all px-3 gap-2.5 rounded-lg'>
-      <Image src={`/assets/images/mail.svg`} alt='' width={20} height={20} />
-      <p className='text-xs font-semibold text-foreground'>Connect Wallet</p>
-      <div className='w-0.5 ml-4 h-10 bg-primary/50' />
-      <Image src={`/assets/images/user.svg`} alt='' width={20} height={20} />
+    <div className='flex items-center bg-white cursor-pointer hover:bg-primary/10 transition-all px-5 gap-2.5 rounded-lg h-8'>
+      <Image src={`/assets/images/wallet.svg`} alt='' width={25} height={25} />
+      <p className='text-xs text-foreground font-semibold action-text'>Connect</p>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import { useState } from 'react';
 export default function Working() {
   const [isUser, setIsUser] = useState(false);
   return (
-    <section id='how-it-works' className='scroll-m-20'>
+    <section id='how-it-works' className='scroll-m-20 h-screen'>
       <style global jsx>
         {`
           html {

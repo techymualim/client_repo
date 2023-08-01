@@ -3,6 +3,8 @@ import './globals.css';
 import { Poppins } from 'next/font/google';
 import Footer from './footer';
 import AnimatePresence from '@/context/animate-presence';
+import React, { Children } from 'react';
+import Home from './page';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -15,17 +17,17 @@ export const metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang='en'>
       <body className={`${poppins.className} ${poppins.variable}`}>
-        <Navbar /> <AnimatePresence>{children}</AnimatePresence>
-        <div className='bg-[#f8f8f8]'>
-          <Footer />
-        </div>
+        <Navbar /> 
+        <AnimatePresence>{children}</AnimatePresence>
+        <Footer />
       </body>
     </html>
   );

@@ -6,7 +6,7 @@ import HeroIllustrations from './hero-illustrations';
 export default function Hero() {
   return (
     <section className='flex flex-col items-center py-8 hero-custom'>
-      <div className='w-full relative duration-1000 animate-in slide-in-from-left-32'>
+      <div className='w-full relative duration-1000 animate-in slide-in-from-top-64'>
         <div className='flex items-center justify-center gap-4 mb-3'>
           <h1 className='text-[36px] font-bold text-center'>
             <span className='text-white capitalize'>

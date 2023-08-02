@@ -3,6 +3,71 @@
 @tailwind utilities;
 @import 'swiper/css';
 @import 'swiper/css/pagination';
+/* globals.css */
+
+@font-face {
+  font-family: 'Poppins Black';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/poppins/Poppins-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins ExtraBold';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/fonts/poppins/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins ExtraLight';
+  font-style: normal;
+  font-weight: 200;
+  src: url('/fonts/poppins/Poppins-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Light';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/fonts/poppins/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/fonts/poppins/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Semibold';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/poppins/Poppins-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Thin';
+  font-style: normal;
+  font-weight: 100;
+  src: url('/fonts/poppins/Poppins-Thin.ttf') format('truetype');
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -21,8 +86,15 @@
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --border: var(--primary);
+
+    --font-family: 'Poppins', sans-serif;
   }
 }
+
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
   height: 5px;
@@ -49,13 +121,11 @@
   html {
     --scroll-behavior: smooth !important;
     scroll-behavior: smooth !important;
-    font-family: 'Poppins', sans-serif;
     
   }
   body {
     @apply overflow-x-hidden bg-background text-foreground;
     font-feature-settings: 'rlig' 1, 'calt' 1;
-    font-family: 'Poppins', sans-serif;
   }
 }
 
@@ -105,17 +175,22 @@
   bottom: 0;
   left: 0;
   width: 100vw;
+  height: 100vh;
   background-color: #00050a;
   background-image: 
-    url('./background-lines.svg'),
-    radial-gradient(circle at 50% 0vh, rgba(0, 129, 222, 0.2) 1%, transparent 25%),
-    radial-gradient(circle at -10% 25vh, rgba(0, 129, 222, 0.2) 1%, transparent 25%),
-    radial-gradient(circle at 110% 75vh, rgba(0, 129, 222, 0.2) 1%, transparent 25%);
-  background-size: 100% 70vh, cover, cover, cover;
-  background-position: center -30%, center, center, center;
+    radial-gradient(circle at 50% -10vh, rgba(0, 129, 222, 0.2) 0.5%, transparent 25%),
+    radial-gradient(circle at -10% 25vh, rgba(0, 129, 222, 0.2) 0.5%, transparent 25%),
+    radial-gradient(circle at 110% 75vh, rgba(0, 129, 222, 0.2) 0.5%, transparent 25%);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   z-index: -5;
   min-height: 100%;
+}
+
+.z-negative {
+  z-index: -1;
 }
 
 .navbar-custom {
@@ -125,6 +200,7 @@
   border: 2px solid rgb(255, 255 , 255, 0.1);
   font-family: 'Poppins', sans-serif;
   height: 70px;
+  z-index: 100;
 }
 
 .navbar-light {

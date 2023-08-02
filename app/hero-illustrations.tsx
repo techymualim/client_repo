@@ -5,9 +5,7 @@ import Image from 'next/image';
 
 export default function HeroIllustrations() {
     return (
-        <section className='w-full mt-6'>
-            <motion.div className='flex w-full'>
-
+        <section className='flex w-full mt-6 duration-1000 animate-in slide-in-from-top-64'>
                 <div style={{ width: '33.3333%' }} className="flex flex-col justify-center">
                     <Image
                         src={'/assets/images/discover-creators.svg'}
@@ -48,7 +46,6 @@ export default function HeroIllustrations() {
                         <p className='text-slate-500 text-[15px]'>Holders</p>
                     </div>
                 </div>
-            </motion.div>
         </section>
     );
 }

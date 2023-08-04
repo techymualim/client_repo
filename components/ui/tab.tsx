@@ -10,14 +10,16 @@ const TabComponent = ({ options, selected, setSelected }: { options: Array<Optio
       {options.map((option) => (
         <button
           key={option.value}
-          className={`p-2 text-white flex flex-col items-center ${selected.value === option.value ? 'relative' : ''
+          className={`md:p-2 text-white text-[12px] md:text-[15px] flex flex-col items-center ${selected.value === option.value ? 'relative' : ''
             }`}
           onClick={() => setSelected(option)}
         >
-          {option.label}
-          {selected.value === option.value && (
-            <div className="absolute w-4 h-1 rounded-full bottom-1 bg-primary/100"></div>
-          )}
+          <div className="flex items-center justify-center pt-3 md:pt-0">
+            <span className="mb-2 md:mb-0">{option.label}</span>
+            {selected.value === option.value && (
+              <div className="absolute w-4 h-1 rounded-full bottom-1 bg-primary/100"></div>
+            )}
+          </div>
         </button>
       ))}
     </div>

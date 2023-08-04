@@ -26,13 +26,13 @@ const options = [
 export default function CreatorToken() {
   const [selectedTab, setSelectedTab] = useState(options[0]);
   return (
-    <section className='container p-2 md:px-8 xl:px-40 h-screen mb-12'>
+    <section className='container p-2 md:px-8 xl:px-40 h-screen mb-12 section-mobile-3'>
       <p className='min-w-[282px] text-white text-center text-[36px] font-bold'>
         Creator Tokens 
       </p>
-      <div className='flex gap-10 pb-24 w-full'>
-        <div className='w-[50%] flex pt-24'>
-          <div className='flex flex-col'>
+      <div className='flex flex-col md:flex-row gap-10 pb-24 w-full'>
+        <div className='w-full md:w-[50%] flex pt-6 md:pt-24'>
+          <div className='flex flex-col text-center md:text-start'>
               <p className='text-sm font-medium text-white'>
                 Unlock an exceptional opportunity to <span className='text-[#0081DE] font-semibold'>support and grow your cherished content
                 creators</span> through the revolutionary creator tokens. 
@@ -50,7 +50,7 @@ export default function CreatorToken() {
               </p>
           </div>
         </div>
-        <div className='w-[50%] flex flex-wrap justify-center gap-8 md:justify-between'>
+        <div className='w-full md:w-[50%] flex flex-wrap justify-center gap-8 md:justify-between'>
           <TabComponent options={options} selected={selectedTab} setSelected={setSelectedTab}  />
           {selectedTab.value === 'token' ? <Token /> : ''}
           {selectedTab.value === 'content' ? <Content /> : ''}

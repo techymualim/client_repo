@@ -33,7 +33,7 @@ export function CreatorCard(props: {
 export default function Creators() {
   return (
     <section className='pb-32'>
-      <div className='flex flex-col mx-auto mb-32 w-fit'>
+      <div className='flex flex-col mx-auto mb-12 md:mb-32 w-fit'>
         <p className='min-w-[282px] text-white text-center text-[36px] font-bold'>
           Trending Creators
         </p>

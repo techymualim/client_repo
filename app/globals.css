@@ -167,6 +167,10 @@
 
 }
 
+html, body {
+  width: 100vw;
+}
+
 
 .background-custom {
   position: fixed;
@@ -252,10 +256,36 @@
   .container {
     max-width: 98vw !important;
   }
+
+  .container-custom {
+    padding: 0;
+  }
+
+  .section-mobile {
+    min-height: 1100px;
+  }
+
+  .section-mobile-2 {
+    min-height: 500px;
+  }
+
+  .section-mobile-3 {
+    min-height: 1200px;
+  }
 }
 
 @media (max-width: 1400px) {
   .container {
     max-width: 90vw !important;
+  }
+}
+
+@media (max-height: 700px) {
+  .section-mobile {
+    min-height: 900px;
+  }
+
+  .section-mobile-2 {
+    min-height: 300px;
   }
 }

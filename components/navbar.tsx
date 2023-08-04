@@ -12,10 +12,10 @@ import { motion } from 'framer-motion';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-  console.log('pathname', pathname)
+
   return (
-    <section>
-      <nav className={`container flex items-center mt-8 navbar-custom ${pathname !== '/' ? 'navbar-light' : ''}`}>
+    <section className='z-20'>
+      <nav className={`container flex justify-between items-center mt-8 navbar-custom ${pathname === '/marketplace' ? 'navbar-light' : ''}`}>
         <Brand pathname={pathname} />
         <NavContent pathname={pathname} />
         <Action />
@@ -23,18 +23,18 @@ export default function Navbar() {
           <AlignJustify
             onClick={() => setIsMenuOpen(true)}
             size={36}
-            className='cursor-pointer lg:hidden text-foreground'
+            className={`cursor-pointer lg:hidden text-foreground ${pathname === '/marketplace' ? '' : 'text-white'}`}
           />
         ) : (
           <X
             onClick={() => setIsMenuOpen(false)}
             size={36}
-            className='cursor-pointer lg:hidden text-foreground'
+            className={`cursor-pointer lg:hidden text-foreground ${pathname === '/marketplace' ? '' : 'text-white'}`}
           />
         )}
       </nav>
 
-      {isMenuOpen && <NavContentMob setIsMenuOpen={setIsMenuOpen} />}
+      {isMenuOpen && <NavContentMob pathname={pathname} setIsMenuOpen={setIsMenuOpen} />}
     </section>
   );
 }
@@ -42,7 +42,7 @@ export default function Navbar() {
 const NavContent = ({pathname}:{pathname: string}) => {
   return (
     <>
-      <ul className={`flex items-center justify-center gap-10 font-medium grow whitespace-nowrap max-lg:hidden ${pathname === '/' ? 'text-white' : ''}`}>
+      <ul className={`flex items-center justify-center gap-10 font-medium grow whitespace-nowrap max-lg:hidden ${pathname !== '/marketplace' ? 'text-white' : ''}`}>
         {nav.map((_) => (
           <li key={_.name}>
             <div
@@ -71,19 +71,19 @@ const NavContent = ({pathname}:{pathname: string}) => {
   );
 };
 
-const NavContentMob = ({ setIsMenuOpen }: { setIsMenuOpen: Function }) => {
+const NavContentMob = ({ setIsMenuOpen, pathname }: { setIsMenuOpen: Function; pathname: string }) => {
   return (
-    <>
-      <ul className='container absolute inset-x-0 flex flex-col items-start font-medium lg:hidden'>
+    <div>
+      <ul className={`rounded-lg py-12 z-30 container absolute inset-x-0 flex flex-col items-start font-medium lg:hidden ${pathname !== '/marketplace' ? 'text-white bg-[#00050a] ' : 'bg-[#f8f8f8]'}`}>
         {nav.map((_) => (
-          <li onClick={() => setIsMenuOpen(false)} key={_.name}>
+          <li className='py-6' onClick={() => setIsMenuOpen(false)} key={_.name}>
             <h3>
               <Link href={_.href}>{_.name}</Link>
             </h3>
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };
 

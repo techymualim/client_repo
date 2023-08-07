@@ -33,7 +33,7 @@ export default function HeroIllustrations() {
       <Image
         src={'/assets/images/creators-illustration.svg'}
         alt=''
-        className='w-full'
+        className='w-[80%] mx-auto md:w-full'
         width={300}
         height={300}
       />

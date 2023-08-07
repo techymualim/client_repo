@@ -5,7 +5,7 @@ import HeroIllustrations from './hero-illustrations';
 
 export default function Hero() {
   return (
-    <section className='flex flex-col items-center py-8 md:py-16 lg:py-20 hero-custom section-mobile'>
+    <section className='flex flex-col items-center py-8 hero-custom section-mobile'>
       <div className='w-full relative duration-1000 animate-in slide-in-from-top-64'>
         <div className='flex items-center justify-center gap-4 mb-3'>
           <h1 className='sm:text-[30px] md:text-[36px] font-bold text-center'>
@@ -47,7 +47,15 @@ export default function Hero() {
               Explore Creator
             </a>
           </Button>
-          <Button outline className='font-semibold text-white'>Start Investing</Button>
+          <Button outline className='font-semibold text-white'>
+            <a
+              href='https://dki9lqeawlk.typeform.com/to/LPzOnbOk'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Are you a Creator?
+            </a>
+          </Button>
         </div>
 
       </div>

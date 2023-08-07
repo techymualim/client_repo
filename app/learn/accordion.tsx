@@ -24,7 +24,7 @@ const Accordion = ({activeSection, setActiveSection}:{ activeSection:string | nu
             {sections.map((section) => (
                 <div key={section.id}>
                     <button
-                        className={`flex items-center w-full p-3 ${activeSection === section.id ? 'bg-opacity-10 bg-white text-white rounded-lg border-2 border-blue-500' : ''}`}
+                        className={`flex items-center p-3 pr-6 ${activeSection === section.id ? 'bg-opacity-10 bg-white text-white rounded-lg border-2 border-blue-500 w-[fit-content]' : ''}`}
                         onClick={() => toggleSection(section.id)}
                     >
                         <span className={`transform transition-transform ${['blockchain', 'tokens'].includes(section.id) && activeSection === section.id ? 'rotate-90' : 'rotate-270'}`}>
@@ -43,7 +43,7 @@ const Accordion = ({activeSection, setActiveSection}:{ activeSection:string | nu
                                 }`}
                         >
                             {section?.content?.map(item => (
-                                <a key={item.id} href={'#'+item.id} className="p-4 pl-10 text-[12px]">{item.value}</a>
+                                <a key={item.id} href={'#'+item.id} className="py-2 pr-4 pl-10 text-[12px]">{item.value}</a>
                             ))}
                         </div>
                     )}

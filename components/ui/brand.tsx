@@ -9,7 +9,7 @@ export default function Brand(
     textSize?: string | number
   }) {
   return (
-    <Link href={'/'} className={`flex items-center gap-3 ${pathname !== '/marketplace' ? 'text-white' : ''}`}>
+    <Link href={'/'} className={`flex items-center gap-3 text-white`}>
       <Image
         src={'/assets/images/logo.svg'}
         alt='logo'

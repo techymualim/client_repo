@@ -8,7 +8,7 @@ import { usePathname } from 'next/navigation';
 export default function Footer() {
   const pathname = usePathname();
   return (
-    <div className={`bg-[#f8f8f8] py-24 ${pathname !== '/marketplace' ? 'footer-custom mt-36' : ''}`}>
+    <div className={`bg-[#f8f8f8] mt-36 py-24 ${pathname !== '/marketplace' ? 'footer-custom' : ''} ${pathname === '/learn' || pathname === '/marketplace' ? 'hidden' : ''}`}>
       <div className='w-full flex justify-center pb-0'>
         <Brand pathname={pathname} imageSize={60} textSize={'40px'} />
       </div>
@@ -35,7 +35,7 @@ export default function Footer() {
               {_.sub.map((__) => (
                 <Link
                   className={`${pathname !== '/marketplace' ? 'text-neutral-500' : 'text-neutral-800'} py-1.5 block text-[14px] font-normal leading-snug capitalize`}
-                  href={__}
+                  href={_.title === 'Learn / FAQS' ? `/learn?topic=${__}` : __}
                   key={__}
                 >
                   {__}
@@ -47,12 +47,11 @@ export default function Footer() {
             <p className={`pb-1 ${pathname !== '/marketplace' ? 'text-white' : 'text-neutral-800'} text-[20px] font-bold capitalize leading-relaxed`}>
               Subscribe
             </p>{' '}
-            <Link
+            <p
               className={`${pathname !== '/marketplace' ? 'text-neutral-500' : 'text-neutral-800'} py-1.5 block text-[14px] font-normal leading-snug mb-6`}
-              href={'/'}
             >
               Signup for our newsletter to get the latest news in your inbox.
-            </Link>
+            </p>
             <form className='flex items-stretch overflow-hidden rounded-lg w-full '>
               <div className="relative flex items-center w-full">
                 <input
@@ -84,7 +83,7 @@ const data = [
   },
   {
     title: 'Learn / FAQS',
-    sub: ['What are creator tokens ?', 'How to buy creator tokens?', 'How to create yout own token?', 'What does “minting” mean?', 'How do i sell my token?', 'how to withdrawal funds?', 'What is a crypto wallet?', 'Introduction to blockcahin', 'What are cryptocurrencies?'],
+    sub: ['Blockchain', 'Tokens', 'Creator Tokens', 'FAQs'],
   },
 
 

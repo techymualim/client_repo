@@ -19,7 +19,7 @@ export default function Working() {
   };
 
   return (
-    <section id='how-it-works' className='scroll-m-20 h-screen min-h-[fit-content] mb-24 section-mobile'>
+    <section id='how-it-works' className='scroll-m-20 min-h-[fit-content] mb-24 section-mobile'>
       <style global jsx>
         {`
           html {
@@ -27,9 +27,9 @@ export default function Working() {
           }
         `}
       </style>
-      <p className='min-w-[282px] text-white text-center text-[36px] font-bold'>
+      <h3 className='min-w-[282px] text-white text-center text-[36px] font-bold'>
         How it works?
-      </p>
+      </h3>
       <div className='flex justify-center gap-10 my-4'>
         <div className='mt-6'>
           <ToggleSwitch options={toggleOptions} onSelect={handleToggle} />
@@ -54,7 +54,7 @@ const CreatorContent = () => {
   return (
     <div className='flex flex-col md:flex-row animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16 w-full'>
       <div className='w-full md:w-[40%] flex flex-col items-end text-center md:text-start'>
-        <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mb-[25%]'>
+        <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mb-[10%] md:mb-[25%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Set up your wallet</p>
           <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Create an account as a “content creator” by connecting your wallet</p>
         </div>
@@ -73,7 +73,7 @@ const CreatorContent = () => {
         />
       </div>
       <div className='w-full md:w-[40%] flex flex-col items-start text-center md:text-start'>
-        <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mt-[25%] md:mt-[25%] mb-[25%] md:mb-[25%]'>
+        <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mt-[10%] md:mt-[25%] mb-[10%] md:mb-[25%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Verify channel</p>
           <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Verify any of your social media channels. This will serve as proof that you are the legitimate content creator of the token</p>
         </div>

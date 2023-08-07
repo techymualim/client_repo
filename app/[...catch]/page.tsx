@@ -1,18 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import stars from '@/components/ui/stars';
+import Stars from '@/components/ui/stars';
 import Image from 'next/image';
 
 export default function Page() {
   return (
     <>
       <div className='background-custom' />
-      {stars}
-      <section className='container container-custom flex flex-col min-h-screen place-content-center mt-12 md:mt-32 mb-32'>
+      <Stars />
+      <section className='container container-custom flex flex-col min-h-screen place-content-center mt-8 mb-32'>
         <div className='w-full flex flex-col md:flex-row gap-14'>
           {/* Left Column */}
           <div className='w-full md:w-[50%]'>
-            <h1 className='sm:text-[30px] md:text-[36px] text-center md:text-start font-bold mb-14 text-white'>Transforming the Digital Investment Landscape</h1>
+            <h1 className='text-[24px] md:text-[36px] text-center md:text-start font-bold mb-14 text-white'>Transforming the Digital Investment Landscape</h1>
             <p className='text-base mb-14 leading-relaxed text-white' style={{ marginBottom: '1.4em' }}>
               Welcome to Innox Marketplace, where we are thrilled to introduce a revolutionary digital asset. Creator tokens possess exciting new properties: they are unique, tradable, and usable across various applications. Similar to physical goods, you have complete freedom to do whatever you wish with them! Whether you want to support your favorite creators, gift tokens to fans worldwide, or trade them on an open marketplace, the possibilities are limitless. And the best part? Creator tokens are equipped with the full programmability of digital assets.
             </p>
@@ -48,11 +48,11 @@ export default function Page() {
         {/* New Section: The story behind Innox */}
         <div className="my-40 text-base leading-relaxed">
           <div className="flex flex-col justify-center items-center md:mb-20"> {/* Center the title */}
-            <h1 className='sm:text-[30px] md:text-[36px] text-center md:text-start font-bold text-white capitalize'>The story behind Innox</h1><br />
+            <h1 className='text-[24px] md:text-[36px] text-center md:text-start font-bold text-white capitalize'>The story behind Innox</h1><br />
             <Image 
               src='/assets/images/underline.svg'
               alt='underline effect'
-              className='relative left-10 md:left-20 -top-4 w-[100px] md:w-[150px]'
+              className='relative left-20 -top-4 w-[150px]'
               width={150}
               height={10}
             />
@@ -81,11 +81,11 @@ export default function Page() {
         </div>
 
             {/* New Section: Trusted by VC's such as */}
-        <div className="my-30 text-base leading-relaxed">
+        <div className="my-30 pb-32 text-base leading-relaxed">
           <div className="flex justify-center"> {/* Center the title */}
-            <h1 className='sm:text-[30px] md:text-[36px] text-center md:text-start font-bold text-white mb-12'>Trusted by VC’s & top creators such as:</h1><br />
+            <h1 className='text-[24px] md:text-[36px] text-center md:text-start font-bold text-white mb-12'>Trusted by VC’s & top creators such as:</h1><br />
           </div>
-          <div className="w-full flex justify-center items-center"> {/* Center the images and paragraphs */}
+          <div className="w-full flex justify-center items-center "> {/* Center the images and paragraphs */}
             <div className=''>
               <img src="/assets/images/vcs.svg" alt="Trusted by VC's" className="w-70 h-auto" />
             </div>

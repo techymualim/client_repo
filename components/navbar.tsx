@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <section className='z-20'>
-      <nav className={`container flex justify-between items-center mt-8 navbar-custom ${pathname === '/marketplace' ? 'navbar-light' : ''}`}>
+      <nav className={`container flex justify-between items-center mt-8 navbar-custom`}>
         <Brand pathname={pathname} />
         <NavContent pathname={pathname} />
         <Action />
@@ -23,13 +23,13 @@ export default function Navbar() {
           <AlignJustify
             onClick={() => setIsMenuOpen(true)}
             size={36}
-            className={`cursor-pointer lg:hidden text-foreground ${pathname === '/marketplace' ? '' : 'text-white'}`}
+            className={`cursor-pointer lg:hidden text-foreground text-white`}
           />
         ) : (
           <X
             onClick={() => setIsMenuOpen(false)}
             size={36}
-            className={`cursor-pointer lg:hidden text-foreground ${pathname === '/marketplace' ? '' : 'text-white'}`}
+            className={`cursor-pointer lg:hidden text-foreground text-white`}
           />
         )}
       </nav>
@@ -42,14 +42,13 @@ export default function Navbar() {
 const NavContent = ({pathname}:{pathname: string}) => {
   return (
     <>
-      <ul className={`flex items-center justify-center gap-10 font-medium grow whitespace-nowrap max-lg:hidden ${pathname !== '/marketplace' ? 'text-white' : ''}`}>
+      <ul className={`flex items-center justify-center gap-10 font-medium grow whitespace-nowrap max-lg:hidden text-white`}>
         {nav.map((_) => (
           <li key={_.name}>
             <div
               className={cn('relative', {
                 'opacity-60': !(
-                  (_.name !== 'home' && pathname.includes(_.href)) ||
-                  (pathname === '/' && _.name === 'home')
+                  (pathname.includes(_.href))
                 ),
               })}
             >
@@ -60,7 +59,7 @@ const NavContent = ({pathname}:{pathname: string}) => {
                   className='absolute left-1/3 w-4 h-1 rounded-full -bottom-1 bg-primary/100'
                 />
               ) : null}
-              <Link className='' href={_.href}>
+              <Link className='font-poppins-regular' href={_.href}>
                 {_.name}
               </Link>
             </div>
@@ -74,7 +73,7 @@ const NavContent = ({pathname}:{pathname: string}) => {
 const NavContentMob = ({ setIsMenuOpen, pathname }: { setIsMenuOpen: Function; pathname: string }) => {
   return (
     <div>
-      <ul className={`rounded-lg py-12 z-30 container absolute inset-x-0 flex flex-col items-start font-medium lg:hidden ${pathname !== '/marketplace' ? 'text-white bg-[#00050a] ' : 'bg-[#f8f8f8]'}`}>
+      <ul className={`rounded-lg py-12 z-30 container absolute inset-x-0 flex flex-col items-start font-medium lg:hidden text-white bg-[#00050a]`}>
         {nav.map((_) => (
           <li className='py-6' onClick={() => setIsMenuOpen(false)} key={_.name}>
             <h3>

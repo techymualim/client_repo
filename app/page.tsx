@@ -4,15 +4,16 @@ import Creators from './creators';
 import Hero from './hero';
 import Timer from './timer';
 import Working from './working';
+import DirectFunding from './direct-funding';
 import Image from 'next/image';
-import stars from '@/components/ui/stars';
+import Stars from '@/components/ui/stars';
 
 export default function Home() {
 
   return (
     <>
       <div className='background-custom' />
-      {stars}
+      <Stars />
       <Image
         src={'/assets/images/background-lines.svg'}
         className='absolute top-[-10%] mx-6 w-[100%] h-[auto] z-negative'
@@ -25,6 +26,7 @@ export default function Home() {
         <Timer />
         <Working />
         <CreatorToken />
+        <DirectFunding />
         <Creators />
       </main>
     </>

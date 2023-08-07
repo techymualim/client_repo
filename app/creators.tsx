@@ -1,10 +1,15 @@
+'use client'
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
 
 export function CreatorCard(props: {
   _: { photo: string; caption: string; title: string; value: string };
 }) {
+  const pathname = usePathname();
   return (
     <div className='flex flex-col items-center'>
       <Image
@@ -14,10 +19,10 @@ export function CreatorCard(props: {
         width={125}
         height={125}
       />
-      <p className='text-center mb-2 text-white text-[14px] font-medium leading-snug'>
+      <p className={`text-center mb-2 ${pathname === '/marketplace' ? 'text-black' : 'text-white'} text-[14px] font-medium leading-snug`}>
         {props._.caption}
       </p>
-      <p className='text-center mb-2 text-white text-[18px] font-bold capitalize leading-relaxed'>
+      <p className={`text-center mb-2 ${pathname === '/marketplace' ? 'text-black' : 'text-white'} text-[18px] font-bold capitalize leading-relaxed`}>
         {props._.title}
       </p>
       <p className='text-center mb-2 text-[#0175C9] text-[14px] font-bold leading-snug'>
@@ -32,11 +37,11 @@ export function CreatorCard(props: {
 
 export default function Creators() {
   return (
-    <section className='pb-32'>
-      <div className='flex flex-col mx-auto mb-12 md:mb-32 w-fit'>
-        <p className='min-w-[282px] text-white text-center text-[36px] font-bold'>
+    <section className='pb-24 min-h-[fit-content] md:mt-12 xl:mt-0'>
+      <div className='flex flex-col mx-auto mb-12 w-fit'>
+        <h3 className='min-w-[282px] text-white text-center text-[36px] font-bold'>
           Trending Creators
-        </p>
+        </h3>
 
       </div>{' '}
       <div className='flex flex-wrap justify-center gap-8 md:justify-between'>
@@ -57,29 +62,28 @@ export default function Creators() {
 
 const data = [
   {
-    photo: '/assets/images/new-hero/animoji-15.svg',
+    photo: '/assets/images/new-hero/new-animoji-1.svg',
     caption: '$LEOST',
     title: 'Leo Sterling',
     value: '54.2 MATIC',
   },
 
   {
-    photo: '/assets/images/new-hero/animoji-16.svg',
+    photo: '/assets/images/new-hero/new-animoji-2.svg',
     caption: '$HAJET',
     title: 'Harper Jetson',
     value: '12.1 MATIC',
   },
   {
-    photo: '/assets/images/new-hero/animoji-17.svg',
+    photo: '/assets/images/new-hero/new-animoji-3.svg',
     caption: '$AISHM',
     title: 'Aisha Mohammed',
     value: '59.23 MATIC',
   },
   {
-    photo: '/assets/images/new-hero/animoji-18.svg',
+    photo: '/assets/images/new-hero/new-animoji-4.svg',
     caption: '$MALJO',
     title: 'Malik Johnson',
     value: '12.34 MATIC',
   },
-
 ];

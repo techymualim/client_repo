@@ -2,7 +2,8 @@ import Navbar from '@/components/navbar';
 import './globals.css';
 import Footer from '@/components/footer';
 import AnimatePresence from '@/context/animate-presence';
-import React, { Children } from 'react';
+import React from 'react';
+import { usePathname } from 'next/navigation';
 
 export const metadata = {
   title: 'Innox',
@@ -13,7 +14,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
     <html lang='en'>
       <body className="font-poppins-regular">

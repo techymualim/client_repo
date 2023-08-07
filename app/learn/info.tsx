@@ -12,7 +12,7 @@ interface Props {
 
 const Info: React.FC<Props> = ({ item, index }) => {
     return (
-        <div id={`${item.id}`} className="p-8 text-white">
+        <div id={`${item.id}`} className="p-8 pt-0 text-white">
             {
                 item.info.map((item, index) => (
                     <InfoText key={`${index}` + item.type} type={item.type} content={item.content} />

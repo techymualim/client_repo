@@ -1,13 +1,25 @@
 'use client';
 import Muted from '@/components/ui/muted';
+import ToggleSwitch from '@/components/ui/toggle-switch';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Working() {
   const [isUser, setIsUser] = useState(false);
+
+  const toggleOptions = [
+    { label: 'For Creators', value: 'creators' },
+    { label: 'For Users', value: 'users' },
+  ];
+
+  const handleToggle = (selectedOption: string) => {
+    if (selectedOption === 'creators') setIsUser(false)
+    if (selectedOption === 'users') setIsUser(true)
+  };
+
   return (
-    <section id='how-it-works' className='scroll-m-20'>
+    <section id='how-it-works' className='scroll-m-20 min-h-[fit-content] mb-24 section-mobile'>
       <style global jsx>
         {`
           html {
@@ -15,60 +27,95 @@ export default function Working() {
           }
         `}
       </style>
-      <p className='min-w-[282px] text-center text-slate-700 text-[25px] font-bold'>
+      <h3 className='min-w-[282px] text-white text-center text-[36px] font-bold'>
         How it works?
-      </p>
-      <ul className='flex justify-center gap-10 my-4'>
-        <div
-          onClick={() => setIsUser(false)}
-          className={cn('capitalize cursor-pointer text-sm pb-1 relative')}
-        >
-          {!isUser && (
-            <div className='absolute w-full h-1 duration-500 rounded-full animate-in slide-in-from-right-20 -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
-          )}
-          <p className=''>For Creators</p>
+      </h3>
+      <div className='flex justify-center gap-10 my-4'>
+        <div className='mt-6'>
+          <ToggleSwitch options={toggleOptions} onSelect={handleToggle} />
         </div>
-        <div
-          onClick={() => setIsUser(true)}
-          className={cn('capitalize cursor-pointer text-sm pb-1  relative')}
-        >
-          {' '}
-          {isUser && (
-            <div className='absolute w-full h-1 duration-500 rounded-full animate-in slide-in-from-left-20 -bottom-1 bg-gradient-to-r from-primary via-primary/60 to-transparent ' />
-          )}
-          <p className=''>For Users</p>
-        </div>
-      </ul>
+      </div>
       {/* transition grid */}
-      <div className='flex flex-wrap justify-center gap-10 my-20'>
-        {(!isUser ? data.slice(0, 4) : data.slice(4)).map((_) => (
-          <div
-            key={_.title}
-            className={cn(
-              'max-w-[17.5rem] animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16'
-            )}
-          >
-            <div className='flex gap-2'>
-              <Image src={_.icon} alt='' width={38} height={30} />{' '}
-              {_.transitionIcon && (
-                <Image
-                  src={_.transitionIcon}
-                  className='block w-full mx-6 grow'
-                  alt=''
-                  width={220}
-                  height={60}
-                />
-              )}
-            </div>
-            <div className=' text-slate-700 my-2.5 text-[15px] font-medium'>
-              {_.title}
-            </div>
-            <Muted>{_.node}</Muted>
-          </div>
-        ))}
+      <div
+        className='flex flex-wrap justify-center gap-10 my-12 w-full'
+      >
+        {
+          !isUser && <CreatorContent />
+        }
+        {
+          isUser && <UserContent />
+        }
       </div>
     </section>
   );
+}
+
+const CreatorContent = () => {
+  return (
+    <div className='flex flex-col md:flex-row animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16 w-full'>
+      <div className='w-full md:w-[40%] flex flex-col items-end text-center md:text-start'>
+        <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mb-[10%] md:mb-[25%]'>
+          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Set up your wallet</p>
+          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Create an account as a “content creator” by connecting your wallet</p>
+        </div>
+        <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
+          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Personalize Token</p>
+          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Navigate to your profile page and create your token. Follow the steps and click the create button to deploy token</p>
+        </div>
+      </div>
+      <div className='w-[20%] hidden sm:flex justify-center'>
+        <Image
+          src={'/assets/images/works-creators.svg'}
+          className='block mx-6 w-full md:w-[50%] h-[100%]'
+          alt=''
+          width={100}
+          height={60}
+        />
+      </div>
+      <div className='w-full md:w-[40%] flex flex-col items-start text-center md:text-start'>
+        <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mt-[10%] md:mt-[25%] mb-[10%] md:mb-[25%]'>
+          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Verify channel</p>
+          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Verify any of your social media channels. This will serve as proof that you are the legitimate content creator of the token</p>
+        </div>
+        <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
+          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>List in marketplace</p>
+          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Share your token with your fans so the minting phase can begin and your fans can start trading your token and accessing exclusive offerings</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const UserContent = () => {
+  return (
+    <div className='flex flex-col md:flex-row animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16 w-full'>
+      <div className='w-full md:w-[40%] flex flex-col items-end text-center md:text-start'>
+        <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mb-[25%]'>
+          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Create an account</p>
+          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Create an account as a “user”.</p>
+        </div>
+        <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
+          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Support your content creator</p>
+          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Start investing in your favorite content creators and access their exclusive offerings. You will see the tokens you own by accesing your metamask wallet.</p>
+        </div>
+      </div>
+      <div className='w-[20%] hidden sm:flex justify-center'>
+        <Image
+          src={'/assets/images/works-users.svg'}
+          className='block mx-6 w-[50%] h-[100%]'
+          alt=''
+          width={100}
+          height={60}
+        />
+      </div>
+      <div className='w-full md:w-[40%] flex flex-col items-start text-center md:text-start'>
+        <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mt-[25%] md:mt-[25%] mb-[25%] md:mb-[25%]'>
+          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Connect wallet</p>
+          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Connect your wallet to buy tokens. Add funds if needed directly through the metamask app or using your credit card.</p>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 const data = [
@@ -105,10 +152,10 @@ const data = [
     title: 'Personalize Token',
     node: (
       <>
-        Navigate to your profile page and<br /> 
+        Navigate to your profile page and<br />
         create your token.
-        Follow the steps and <span className='text-sky-600 '>click the create button 
-        to deploy token</span>
+        Follow the steps and <span className='text-sky-600 '>click the create button
+          to deploy token</span>
       </>
     ),
   },
@@ -118,7 +165,7 @@ const data = [
     node: (
       <>
         Share your token with your fans{' '}
-        <span className='text-sky-600 '>so the minting phase can begin</span> and your fans 
+        <span className='text-sky-600 '>so the minting phase can begin</span> and your fans
         can start trading your token
       </>
     ),
@@ -148,7 +195,7 @@ const data = [
     node: (
       <>
         Start <span className='text-sky-600 '>investing</span> in your favorite
-        content creators. 
+        content creators.
         You will see the tokens you own by accesing your metamask wallet
       </>
     ),

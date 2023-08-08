@@ -1,16 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Brand() {
+export default function Brand(
+  {pathname, imageSize, textSize}
+  :{
+    pathname: string
+    imageSize?: number
+    textSize?: string | number
+  }) {
   return (
-    <Link href={'/'} className='flex items-center gap-3'>
+    <Link href={'/'} className={`flex items-center gap-3 text-white`}>
       <Image
         src={'/assets/images/logo.svg'}
         alt='logo'
-        width={55}
-        height={55}
+        width={imageSize ? imageSize : 35}
+        height={imageSize ? imageSize : 35}
       />
-      <p className='text-primary text-xl'>Innox</p>
+      <p className='text-xl font-extrabold' style={{ fontSize: textSize }}>Innox</p>
     </Link>
   );
 }

@@ -18,7 +18,15 @@ module.exports = {
         rocket: 'rocket 45s ease 9999',
       },
       fontFamily: {
-        poppins: 'var(--poppins)',
+        'poppins-black': ['Poppins Black', 'sans-serif'],
+        'poppins-bold': ['Poppins Bold', 'sans-serif'],
+        'poppins-extrabold': ['Poppins ExtraBold', 'sans-serif'],
+        'poppins-extralight': ['Poppins ExtraLight', 'sans-serif'],
+        'poppins-light': ['Poppins Light', 'sans-serif'],
+        'poppins-medium': ['Poppins Medium', 'sans-serif'],
+        'poppins-regular': ['Poppins Regular', 'sans-serif'],
+        'poppins-semibold': ['Poppins Semibold', 'sans-serif'],
+        'poppins-thin': ['Poppins Thin', 'sans-serif'],
       },
       colors: {
         border: 'hsl(var(--border))',

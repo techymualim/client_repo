@@ -8,11 +8,11 @@ export default function Page() {
     <>
       <div className='background-custom' />
       <Stars />
-      <section className='container container-custom flex flex-col min-h-screen place-content-center mt-8 mb-32'>
+      <section className='container container-custom flex flex-col min-h-screen place-content-center py-10 mt-24 mb-32'>
         <div className='w-full flex flex-col md:flex-row gap-14'>
           {/* Left Column */}
           <div className='w-full md:w-[50%]'>
-            <h1 className='text-[24px] md:text-[36px] text-center md:text-start font-bold mb-14 text-white'>Transforming the Digital Investment Landscape</h1>
+            <h1 className='text-[24px] md:text-[36px] text-center md:text-start font-bold mb-14 mt-20 text-white'>Transforming the Digital Investment Landscape</h1>
             <p className='text-base mb-14 leading-relaxed text-white' style={{ marginBottom: '1.4em' }}>
               Welcome to Innox Marketplace, where we are thrilled to introduce a revolutionary digital asset. Creator tokens possess exciting new properties: they are unique, tradable, and usable across various applications. Similar to physical goods, you have complete freedom to do whatever you wish with them! Whether you want to support your favorite creators, gift tokens to fans worldwide, or trade them on an open marketplace, the possibilities are limitless. And the best part? Creator tokens are equipped with the full programmability of digital assets.
             </p>
@@ -25,7 +25,8 @@ export default function Page() {
           </div>
 
           {/* Right Column (Image) */}
-          <div className="flex justify-end w-full md:w-[50%]">
+          <br />
+          <div className="flex justify-end w-full md:w-[40%] mt-10">
             <img src="/assets/images/finalus.svg" alt="About Us" className="w-88 h-auto" />
           </div>
         </div>

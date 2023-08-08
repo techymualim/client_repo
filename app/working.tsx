@@ -27,11 +27,11 @@ export default function Working() {
           }
         `}
       </style>
-      <h3 className='min-w-[282px] text-white text-center text-[36px] font-bold'>
+      <h3 className='min-w-[282px] text-white text-center text-[36px] font-bold mb-16'>
         How it works?
       </h3>
-      <div className='flex justify-center gap-10 my-4'>
-        <div className='mt-6'>
+      <div className='flex justify-center gap-10'>
+        <div className='my-8'>
           <ToggleSwitch options={toggleOptions} onSelect={handleToggle} />
         </div>
       </div>

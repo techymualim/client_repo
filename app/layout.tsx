@@ -35,7 +35,9 @@ export default function RootLayout({
         `}
         </style>
         <Navbar />
-        <AnimatePresence>{children}</AnimatePresence>
+        <AnimatePresence>
+          {children}
+        </AnimatePresence>
         <Footer />
       </body>
     </html>

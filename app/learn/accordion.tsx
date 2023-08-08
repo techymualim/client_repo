@@ -9,7 +9,7 @@ const Accordion = ({activeSection, setActiveSection}:{ activeSection:string | nu
     };
 
     return (
-        <div className="space-y-4 text-white z-20">
+        <div className="space-y-4 text-white z-20 hidden md:block">
             <div className='flex items-center mb-6 space-x-3'>
                 <Image
                     src='/assets/images/contents-icon.svg'

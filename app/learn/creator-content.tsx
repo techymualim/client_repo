@@ -44,7 +44,7 @@ const creator1 = {
 const creator2 = {
   id: 'creator-2',
   info: [
-    { type: 'title', content: "What do you need to do to have you token on our marketplace and start earning?" },
+    { type: 'title', content: "What do you need to do to have your token on our marketplace and start earning?" },
     { type: 'paragraph', content: "Sign up as a creator, and input the name and symbol of your token so we can process the information and create the token or fill out this form: " },
     { type: 'link', content: "https://dki9lqeawlk.typeform.com/to/B4nRvlBP" },
   ]

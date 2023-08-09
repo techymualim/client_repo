@@ -6,7 +6,7 @@ export default function Timer() {
   const [days, hours, minutes, seconds] = useCountdown('August, 15, 2023');
 
   return (
-    <section className='mb-24 mt-36 py-10 section-mobile-2 flex flex-col justify-center items-center md:block'>
+    <section className='mb-0 mt-0 md:mb-24 md:mt-36 py-10 section-mobile-2 flex flex-col justify-center items-center md:block'>
       <div className='text-white text-[28px] text-center font-semibold capitalize'>
         Marketplace Available in:
       </div>

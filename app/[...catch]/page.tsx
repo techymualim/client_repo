@@ -2,6 +2,7 @@
 import React from 'react';
 import Stars from '@/components/ui/stars';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -36,11 +37,11 @@ export default function Page() {
           <p>
             As trailblazers in the creator token space, we take immense pride in being the first marketplace for investing in content creators. Our platform provides a secure and vibrant environment where creators, fans, and investors converge to explore, engage with, and support the visionary talents shaping the content creation landscape.
           </p>
-          <br/>
+          <br />
           <p>
             Join us on this remarkable journey as we usher in a new era of investment, growth, and collaboration. Together, we will unlock unprecedented opportunities for creators, redefine the relationship between fans and content creators, and revolutionize the way the world values and supports creative endeavors.
           </p>
-          <br/>
+          <br />
           <p>
             Experience the transformative power of creator tokens in the open digital economy with Innox.
           </p>
@@ -50,7 +51,7 @@ export default function Page() {
         <div className="my-40 text-base leading-relaxed">
           <div className="flex flex-col justify-center items-center md:mb-20"> {/* Center the title */}
             <h1 className='text-[24px] md:text-[36px] text-center md:text-start font-bold text-white capitalize'>The story behind Innox</h1><br />
-            <Image 
+            <Image
               src='/assets/images/underline.svg'
               alt='underline effect'
               className='relative left-20 -top-4 w-[150px]'
@@ -60,8 +61,26 @@ export default function Page() {
           </div>
           <div className="flex flex-col md:flex-row gap-8 items-start"> {/* Separate the image and paragraphs */}
             {/* Left Column (Image) */}
-            <div className='w-full md:w-[50%]'>
-              <img src="/assets/images/varo2.svg" alt="The story behind Innox" className="w-70 h-auto" />
+            <div className='w-full md:w-[50%] flex flex-col items-center justify-center'>
+              <img src="/assets/images/varo2.svg" alt="The story behind Innox" className="w-70 h-auto relative bottom-20" />
+              <div className='w-full flex justify-center gap-6 relative bottom-10 md:bottom-20'>
+                <Link href={'https://www.linkedin.com/in/david-varo-alonso/'} target='_blank' rel='noreferrer'>
+                  <Image
+                    src='/assets/images/linkedin-outlined.svg'
+                    alt='linkedin link'
+                    width={50}
+                    height={50}
+                  />
+                </Link>
+                <Link href={'https://twitter.com/InnoxApp'} target='_blank' rel='noreferrer'>
+                  <Image
+                    src='/assets/images/twitter-outlined.svg'
+                    alt='twitter-link'
+                    width={50}
+                    height={50}
+                  />
+                </Link>
+              </div>
             </div>
             {/* Right Column */}
             <div className='text-white w-full md:w-[50%]'>
@@ -81,7 +100,7 @@ export default function Page() {
           </div>
         </div>
 
-            {/* New Section: Trusted by VC's such as */}
+        {/* New Section: Trusted by VC's such as */}
         <div className="my-30 pb-32 text-base leading-relaxed">
           <div className="flex justify-center"> {/* Center the title */}
             <h1 className='text-[24px] md:text-[36px] text-center md:text-start font-bold text-white mb-12'>Trusted by VC’s & top creators such as:</h1><br />

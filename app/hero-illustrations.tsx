@@ -19,13 +19,13 @@ export default function HeroIllustrations() {
       <h5 className='text-[18px] font-semibold text-white capitalize mt-3'>
         Discover New Creators.
       </h5>
-      <p className='text-[15px] text-slate-500 capitalize mt-3'>
+      <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>
         Help shape the path for creators.
       </p>
-      <p className='text-[15px] text-slate-500 capitalize mt-3 max-w-xs'>
+      <p className='text-sm md:text-base text-slate-500 capitalize mt-3 max-w-md md:max-xs'>
         Access exclusive content, giveaways,
-        merch drops and more through
-        creator tokens
+        <br /> merch drops and more through
+        creator <br /> tokens
       </p>
     </div>
 
@@ -42,11 +42,11 @@ export default function HeroIllustrations() {
     <div className="w-full md:w-1/3 mt-4 md:mt-0 flex">
       <div className="w-1/2 flex flex-col items-center justify-center text-center md:text-left">
         <p className='text-[36px] text-white font-bold'>30K<span className='text-blue'>+</span></p>
-        <p className='text-slate-500 text-[15px]'>Tokens Minted</p>
+        <p className='text-slate-500 text-sm md:text-base'>Tokens Minted</p>
       </div>
       <div className="w-1/2 flex flex-col items-center justify-center text-center md:text-left">
         <p className='text-[36px] text-white font-bold'>1120<span className='text-blue'>+</span></p>
-        <p className='text-slate-500 text-[15px]'>Holders</p>
+        <p className='text-slate-500 text-sm md:text-base'>Holders</p>
       </div>
     </div>
   </div>

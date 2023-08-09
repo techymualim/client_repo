@@ -14,7 +14,7 @@ import Stars from '@/components/ui/stars';
 export default function Page() {
   const searchParams = useSearchParams()
 
-  const topic = searchParams.get('topic')?.toLowerCase() === 'creator tokens' ? 'creator-tokens' : searchParams.get('topic')?.toLowerCase()
+  const topic = searchParams.get('topic')?.toLowerCase()
   const [activeSection, setActiveSection] = useState<string | null>(topic || null);
   const [starsVisible, setStarsVisible] = useState<boolean>(false);
 

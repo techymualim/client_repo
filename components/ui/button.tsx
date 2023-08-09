@@ -13,7 +13,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         {...props}
         className={cn(
-          'px-6 py-3 text-sm font-medium text-white transition-all rounded-lg hover:shadow-lg',
+          'px-3 md:px-6 py-3 text-sm font-medium text-white transition-all rounded-lg hover:shadow-lg',
           'bg-gradient-to-r from-primary to-secondary',
           {
             ' border  text-primary from-transparent to-transparent hover:shadow-none hover:bg-primary/5':

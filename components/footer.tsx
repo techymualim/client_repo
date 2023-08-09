@@ -13,10 +13,10 @@ export default function Footer() {
         <Brand pathname={pathname} imageSize={60} textSize={'40px'} />
       </div>
       <div className='w-full flex justify-center gap-2 p-6'>
-        {Array.from(Array(4).keys()).map((_) => (
-          <Link href={'/'} key={_}>
+        {socialLinks.map((item) => (
+          <Link href={item.href} key={item.href} target='_blank' rel='noreferrer'>
             <Image
-              src={`/assets/images/${_ + 1}.svg`}
+              src={item.image}
               alt='   '
               width={80}
               height={80}
@@ -27,18 +27,18 @@ export default function Footer() {
       <section className={'container flex flex-wrap justify-between gap-10 px-3'}>
         {/* middle part */}
         <div className='w-full flex flex-wrap'>
-          {data.map((_) => (
-            <div key={_.title} className={`${_.title === 'Learn / FAQS' ? 'w-full' : 'w-[50%]'} md:w-[25%] mb-6 md:mb-0`}>
+          {data.map((item) => (
+            <div key={item.title} className={`${item.title === 'Learn / FAQS' ? 'w-full' : 'w-[50%]'} md:w-[25%] mb-6 md:mb-0`}>
               <p className={`pb-1 ${pathname !== '/marketplace' ? 'text-white' : 'text-neutral-800'} text-[20px] font-bold capitalize leading-relaxed`}>
-                {_.title}
+                {item.title}
               </p>
-              {_.sub.map((__) => (
+              {item.sub.map((el) => (
                 <Link
                   className={`${pathname !== '/marketplace' ? 'text-neutral-500' : 'text-neutral-800'} py-1.5 block text-[14px] font-normal leading-snug capitalize`}
-                  href={_.title === 'Learn / FAQS' ? `/learn?topic=${__}` : __}
-                  key={__}
+                  href={el.link}
+                  key={el.name}
                 >
-                  {__}
+                  {el.name}
                 </Link>
               ))}
             </div>
@@ -75,16 +75,37 @@ export default function Footer() {
 const data = [
   {
     title: 'Resources',
-    sub: ['Help & Support', "Terms & Services", 'Security', 'Privacy Policy'],
+    sub: [
+      {name: 'Help & Support', link: '/help-and-support'}, 
+      {name: 'Terms of Service', link: '/terms-of-service'}, 
+      {name: 'Privacy Policy', link: '/privacy-policy'}, ]
   },
   {
     title: 'Company ',
-    sub: ['About Us', 'Contact Us', 'Our Blog', 'Discover'],
+    sub: [
+      {name: 'About Us', link: '/about'}, 
+      {name: 'Contact Us', link: ''}, 
+      {name: 'Our Blog', link: ''}, 
+      {name: 'Our Blog', link: ''},
+    ],
   },
   {
     title: 'Learn / FAQS',
-    sub: ['Blockchain', 'Tokens', 'Creator Tokens', 'FAQs'],
+    sub: [
+      {name: 'Blockchain', link: '/learn?topic=blockchain'}, 
+      {name: 'Tokens', link: '/learn?topic=tokens'}, 
+      {name: 'Creator Tokens', link: '/learn?topic=creator-tokens'}, 
+      {name: 'FAQs', link: '/learn?topic=faqs'}],
   },
-
-
 ];
+
+const socialLinks = [
+  {
+    image: '/assets/images/5.svg',
+    href: 'https://www.linkedin.com/in/david-varo-alonso/'
+  },
+  {
+    image: '/assets/images/4.svg',
+    href: 'https://twitter.com/InnoxApp'
+  },
+]

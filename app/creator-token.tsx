@@ -28,13 +28,13 @@ export default function CreatorToken() {
   const [selectedTab, setSelectedTab] = useState(options[0]);
   return (
     <section className='container min-h-[fit-content] mb-24 section-mobile-3 px-0'>
-      <h3 className='min-w-[282px] text-white text-center text-[36px] font-bold mb-16'>
+      <h3 className='min-w-[282px] text-white text-center text-[30px] md:text-[36px] font-bold mb-16'>
         Creator Tokens 
       </h3>
       <div className='flex flex-col md:flex-row md:justify-between w-full mr-10'>
         <div className='w-full md:w-[50%] flex md:mt-16 md:mr-20 md:ml-4 md:pt-[70px]'>
-          <div className='flex flex-col text-center md:text-start'>
-              <p className='text-md font-large text-white mb-24'>
+          <div className='flex flex-col text-center md:text-start px-6 md:px-0'>
+              <p className='text-sm md:text-base font-large text-white mb-8 md:mb-24'>
                 Unlock an exceptional opportunity to <span className='text-[#0081DE] font-semibold'>support and grow your cherished content
                 creators</span> 
                 <br />
@@ -46,7 +46,7 @@ export default function CreatorToken() {
                 <br />
                 giveaway opportunities, and insider communication with your creators.
               </p>
-              <p className='text-md font-medium text-white'>
+              <p className='text-sm md:text-base font-large text-white'>
                 Discover a world where <span className='text-[#0081DE] font-semibold'>creativity meets investment</span>, where you can actively participate 
                 <br />
                 in the success of your favorite content creators while reaping unparalleled benefits. Don't miss 

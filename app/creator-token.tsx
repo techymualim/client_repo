@@ -33,28 +33,30 @@ export default function CreatorToken() {
       </h3>
       <div className='flex flex-col md:flex-row md:justify-between w-full mr-10'>
         <div className='w-full md:w-[50%] flex md:mt-16 md:mr-20 md:ml-4 md:pt-[70px]'>
-          <div className='flex flex-col text-center md:text-start px-6 md:px-0'>
+        <div className='flex flex-col text-center md:text-start px-6 md:px-0'>
               <p className='text-sm md:text-base font-large text-white mb-8 md:mb-24'>
                 Unlock an exceptional opportunity to <span className='text-[#0081DE] font-semibold'>support and grow your cherished content
                 creators</span> 
                 <br />
-                through the revolutionary creator tokens. By strategically investing in these tokens, 
-                <br />
-                you can benefit from an increase in the token’s price, gain exclusive privileges,
-            
-                access to early and premium content, limited-edition merchandise drops, exhilarating
-                <br />
-                giveaway opportunities, and insider communication with your creators.
+                through the revolutionary creator tokens. By strategically investing in these tokens, you can
+                
+                gain exclusive privileges,  access to early and premium content, limited-edition 
+                merchandise drops, exhilarating giveaway opportunities, and insider communication 
+                offered by your favorite content creators.
+                As a content creator you will be able to create and deploy your own token/currency 
+                in order for your fans to access exclusive content, giveaways, merch drops you share 
+                through your profile page on our platform
+                
               </p>
               <p className='text-sm md:text-base font-large text-white'>
                 Discover a world where <span className='text-[#0081DE] font-semibold'>creativity meets investment</span>, where you can actively participate 
-                <br />
+                
                 in the success of your favorite content creators while reaping unparalleled benefits. Don't miss 
                 
                 out on this exciting chance to connect on a deeper level with the creators you adore. 
-                <br />
+              
                 Join the movement and witness the transformative potential Innox offers as we usher
-                <br />
+                
                 in a new era of support for artistic brilliance.
               </p>
           </div>

@@ -15,10 +15,11 @@ export default function Page() {
           <div className='w-full md:w-[50%]'>
             <h1 className='text-[24px] md:text-[36px] text-center md:text-start font-bold mb-14 mt-20 text-white'>Transforming the Digital Investment Landscape</h1>
             <p className='text-base mb-14 leading-relaxed text-white' style={{ marginBottom: '1.4em' }}>
-              Welcome to Innox Marketplace, where we are thrilled to introduce a revolutionary digital asset. Creator tokens possess exciting new properties: they are unique, tradable, and usable across various applications. Similar to physical goods, you have complete freedom to do whatever you wish with them! Whether you want to support your favorite creators, gift tokens to fans worldwide, or trade them on an open marketplace, the possibilities are limitless. And the best part? Creator tokens are equipped with the full programmability of digital assets.
+            Welcome to Innox! Discover the enchanting world where a new era of connection unfolds! We are delighted to present a pioneering platform that transforms the relationship between content creators and their devoted fans into a captivating experience. Creator tokens possess exciting new properties: they are unique, tradable, and usable in many ways. Whether you want to support your favorite creators, gift tokens to each other,  trade them on an open marketplace, access exclusive content and giveaways, the possibilities are limitless.
+
             </p>
             <p className='text-base mb-14 leading-relaxed text-white' style={{ marginBottom: '1.4em' }}>
-              Our unwavering dedication lies in building state-of-the-art tools that empower consumers to engage in free and seamless trading of creator tokens. We strive to provide creators with the means to launch groundbreaking digital works, pushing the boundaries of innovation. Additionally, we support developers in constructing immersive and integrated marketplaces, fostering vibrant ecosystems for these valuable assets.
+              Our unwavering dedication lies in building state-of-the-art tools that empower consumers to engage in free and seamless trading of creator tokens. We strive to provide creators with the means to launch groundbreaking digital works, pushing the boundaries of innovation. Additionally we support creators through the process in order to make their adaptation of this new technology as smooth and simple as possible.
             </p>
             <p className='text-base leading-relaxed text-white' style={{ marginBottom: '1.4em' }}>
               By embracing these cutting-edge technologies and fostering an environment of innovation and collaboration, we aim to shape a future where creator tokens revolutionize the way we engage with digital content. At Innox, we are committed to building the infrastructure that empowers creators, investors, and enthusiasts to participate in a thriving and interconnected ecosystem of digital assets.
@@ -35,7 +36,7 @@ export default function Page() {
         {/* Additional Paragraphs */}
         <div className="my-10 md:my-5 text-base leading-relaxed text-white" style={{ lineHeight: '1.4', marginBottom: '1.4em' }}>
           <p>
-            As trailblazers in the creator token space, we take immense pride in being the first marketplace for investing in content creators. Our platform provides a secure and vibrant environment where creators, fans, and investors converge to explore, engage with, and support the visionary talents shaping the content creation landscape.
+            As trailblazers in the token space, we take immense pride in being the first marketplace for investing in content creators. Our platform provides a secure and vibrant environment where creators, fans, and investors converge to explore, engage with, and support the visionary talents shaping the content creation landscape.
           </p>
           <br />
           <p>
@@ -85,13 +86,15 @@ export default function Page() {
             {/* Right Column */}
             <div className='text-white w-full md:w-[50%]'>
               <p className="mb-6" style={{ marginBottom: '1.4em' }}>
-                The concept behind Innox originated in 2021 during David’s brainstorming sessions for potential business ventures. From a young age, David desired to live life on his own terms and exert full control over his endeavors. However, it was not until early 2023 that he made the decision to pursue a complex yet captivating idea that would disrupt the entertainment and creator economy industry.
+              The concept behind Innox originated in 2021 during David’s brainstorming sessions for potential business ventures. From a young age, David desired to be an entrepreneur with the goal of living life on his own terms and exert full control over his endeavors. After many ventures during the years, one of them including a digital marketing agency which he closed on April 2023 & an educatinal platform that offered courses to poeple in LaTam with limited resources, Zinbed, David decided to embark on a complex yet captivating idea that would disrupt the entertainment and creator economy industry. 
+
               </p>
               <p className="mb-6" style={{ marginBottom: '1.4em' }}>
-                Having been an avid consumer of YouTube videos since the age of 12, David spent his middle and high school years immersed in binge-watching various content creators. He observed the journeys of numerous creators, witnessing both their rise to fame and their setbacks. Throughout this time, he often thought about the opportunity of having invested in a creator with less than 50k subscribers, only to see them grow into a channel with millions of dedicated followers. Such an investment would have not only benefited the fans who invested in the token but also provided an additional income stream for the content creator through the utilization of tokens.
+              Having been an avid consumer of YouTube videos since the age of 12, David spent his middle and high school years immersed in binge-watching various content creators. He observed the journeys of numerous creators, witnessing both their rise to fame and their setbacks. Over the course of this journey, one recurring thought emerged: the potential of investing in a content creator during their early days, when their subscriber count was under 50k. Imagine the prospect of witnessing their meteoric rise to a channel with millions of devoted followers. Such an investment would not have solely rewarded the supporters who believed in the creators journey, but also introduced an additional avenue of income for the content creator, all made possible through the ingenious utilization of tokens.
+
               </p>
               <p className="mb-6" style={{ marginBottom: '1.4em' }}>
-                Captivated by the immense potential and mutual benefits for creators and fans, David began meticulously planning and devising strategies to make this concept accessible and applicable to creators and users of diverse backgrounds and demographics. In July 2023, the beta version of Innox was launched, marking the birth of the first marketplace for creator tokens.
+              Captivated by the immense potential and mutual benefits for creators and fans, David began meticulously planning and devising strategies to make this concept accessible and applicable to creators and users of diverse backgrounds and demographics. In July 2023, the website  was launched, marking the birth of the first sights of the revolutionary platform scheduled to be live by the end of August/September.
               </p>
               <p>
                 Today, we take great pride in being the pioneers of this innovative and disruptive platform. Our primary objective is to revolutionize the entertainment landscape and provide unwavering support to creators throughout their journey.

@@ -86,7 +86,6 @@ const data = [
       {name: 'About Us', link: '/about'}, 
       {name: 'Contact Us', link: ''}, 
       {name: 'Our Blog', link: ''}, 
-      {name: 'Our Blog', link: ''},
     ],
   },
   {

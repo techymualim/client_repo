@@ -21,7 +21,7 @@ const blockchain1 = {
     { type: 'title', content: 'What is blockchain technology?' },
     { type: 'paragraph', content: 'Blockchain technology is a decentralized and distributed ledger system that allows multiple parties to maintain a secure, transparent, and immutable record of transactions or data. It was originally introduced as the underlying technology for the cryptocurrency Bitcoin but has since found applications in various industries beyond digital currencies.' },
     { type: 'paragraph', content: 'At its core, a blockchain is a chain of blocks, where each block contains a list of transactions or data. These blocks are linked together using cryptographic techniques, forming a continuous chain. Each block typically includes a reference (hash) to the previous block, which ensures the integrity and immutability of the entire chain.' },
-    { type: 'subtitle', content: 'How it works' },
+    { type: 'title', content: 'How it works' },
     { type: 'underlined', content: 'Decentralization' },
     { type: 'paragraph', content: 'Unlike traditional centralized systems, blockchain operates in a decentralized manner. Instead of a single entity or authority controlling the entire network, blockchain relies on a network of nodes (computers) that participate in the validation and verification of transactions.' },
     { type: 'underlined', content: 'Transaction Validation' },

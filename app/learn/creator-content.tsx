@@ -22,29 +22,28 @@ const creator1 = {
     { type: 'underlined', content: "Invest" },
     { type: 'paragraph', content: "With our marketplace, you can invest in the tokens of your beloved content creators. By purchasing their tokens, you contribute to their growth, and as their popularity soars, so does the value of the tokens. It's a win-win situation where you can both support your idols and potentially reap the rewards of their success." },
     { type: 'underlined', content: "Trade" },
-    { type: 'paragraph', content: "Our platform also enables you to trade creator tokens with our built in decentralize exchange, Uniswap. Explore a vibrant marketplace where you can buy, sell, and exchange tokens, creating an exciting ecosystem around your favorite creators. Stay tuned for new token listings and engage in thrilling trading experiences." },
-    { type: 'subtitle', content: "Minting Tokens" },
-    { type: 'paragraph', content: "There will be an initial phase in which the content creator will have a pre-sale/minting of some of its tokens at a lower price for fans to sell it at higher prices during the trading phase. This will allow the content creator to greatly benefit from its tokens, as well as the token holders who bought it at a low price to make a profit." },
+    { type: 'paragraph', content: "Our platform also enables you to swap creator tokens through Uniswap. Explore a vibrant marketplace where you can buy and exchange tokens, creating an exciting ecosystem around your favorite creators. Stay tuned for new token listings and engage in thrilling trading experiences." },
+    { type: 'underlined', content: "Minting Tokens" },
+    { type: 'paragraph', content: "There will be an initial phase in which the content creator will deploy and intitial supply of tokens at a set price in order for their fans to mint them (this is how fans will aquire tokens). This will allow the content creator to greatly benefit from its tokens, as well as the token holders who bought it at a low price to acquire a greate amount of tokens for a fair price." },
     { type: 'underlined', content: "Example of minting phase:" },
-    { type: 'paragraph', content: "20,000 Tokens at a reduced price of $5 per token --) $100,000 in profit 85/15 between creator and Innox." },
+    { type: 'paragraph', content: "A creator can choose to supply and intial amount of tokens of 25,000 Tokens at a price of $5 per token. Once the creator deploys the tokens, the fans can start minting and acquiring tokens in order to use them to access exclusive offerings by creators" },
     
-    { type: 'subtitle', content: "Trading Tokens" },
-    { type: 'paragraph', content: "The trading phase will occur after the mint phase has been completed. Fans will be able to buy and sell their tokens at market price and start trading the creators token. Based on the trading volume activity(Supply and demand) the price will increase or decrease." },
-    { type: 'paragraph', content: "The creator will get 3.5% of the what their fans trade over time. This will be deposited into the creators wallet in order them to withdraw it." },
+    { type: 'underlined', content: "Trading Tokens" },
+    { type: 'paragraph', content: "The trading phase will occur after all tokens have been minted or when the creators token reaches a set trading volume. This will allow the price of the token to not be manipulated and move steadily. Token holders will be able to sell/swap the creator token using uniswaps interface." },
     
-    { type: 'subtitle', content: "Utility of Tokens" },
+    
+    { type: 'underlined', content: "Utility of Tokens" },
     { type: 'paragraph', content: "It allows the creator to make additional income without having to invest time or money into its token." },
-    { type: 'paragraph', content: "Fans will be part of the content creators journey while at the same time having the chance to make money out of their investment in the token." },
-    { type: 'paragraph', content: "Tokens can be use for giveaways (Ex. 10 tokens equal 10 entries for a merch, iphone or other type of item being given away." },
-    { type: 'paragraph', content: "Implementation of tokens in merch website in order for fans to buy merch using tokens." },
-    { type: 'paragraph', content: "Token holders have access to limited videos, exclusive content/merch drops, etc."}
+    { type: 'paragraph', content: "Tokens can be use for giveaways (Ex. 10 tokens equal 10 entries for a merch item, iphone or other type of item being given away." },
+    { type: 'paragraph', content: "Creators can set up a simple merch store on their profile section in order for their fans/token holders to purchase merchendise through tokens" },
+    { type: 'paragraph', content: "Token holders can access exclusive/early content published by the creator on their profile page"}
   ]
 };
 
 const creator2 = {
   id: 'creator-2',
   info: [
-    { type: 'title', content: "What do you need to do to have you token on our marketplace and start earning?" },
+    { type: 'title', content: "What do you need to do to have your token on our marketplace and start earning?" },
     { type: 'paragraph', content: "Sign up as a creator, and input the name and symbol of your token so we can process the information and create the token or fill out this form: " },
     { type: 'link', content: "https://dki9lqeawlk.typeform.com/to/B4nRvlBP" },
   ]

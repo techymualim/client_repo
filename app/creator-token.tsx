@@ -28,30 +28,40 @@ export default function CreatorToken() {
   const [selectedTab, setSelectedTab] = useState(options[0]);
   return (
     <section className='container min-h-[fit-content] mb-24 section-mobile-3 px-0'>
-      <h3 className='min-w-[282px] text-white text-center text-[36px] font-bold'>
+      <h3 className='min-w-[282px] text-white text-center text-[30px] md:text-[36px] font-bold mb-16'>
         Creator Tokens 
       </h3>
-      <div className='flex flex-col md:flex-row gap-10 w-full'>
-        <div className='w-full md:w-[50%] flex pt-6 md:pt-24'>
-          <div className='flex flex-col text-center md:text-start mt-1'>
-              <p className='text-sm font-medium text-white mb-24'>
+      <div className='flex flex-col md:flex-row md:justify-between w-full mr-10'>
+        <div className='w-full md:w-[50%] flex md:mt-16 md:mr-20 md:ml-4 md:pt-[70px]'>
+        <div className='flex flex-col text-center md:text-start px-6 md:px-0'>
+              <p className='text-sm md:text-base font-large text-white mb-8 md:mb-24'>
                 Unlock an exceptional opportunity to <span className='text-[#0081DE] font-semibold'>support and grow your cherished content
-                creators</span> through the revolutionary creator tokens. 
-                By strategically investing in these tokens, you can benefit from an increase in the 
-                token’s price, gain exclusive privileges, access to early and premium content, limited-edition 
-                merchandise drops, exhilarating giveaway opportunities, and seamless insider communication 
-                within our vibrant community of valued holders.
+                creators</span> 
+                <br />
+                through the revolutionary creator tokens. By strategically investing in these tokens, you can
+                
+                gain exclusive privileges,  access to early and premium content, limited-edition 
+                merchandise drops, exhilarating giveaway opportunities, and insider communication 
+                offered by your favorite content creators.
+                As a content creator you will be able to create and deploy your own token/currency 
+                in order for your fans to access exclusive content, giveaways, merch drops you share 
+                through your profile page on our platform
+                
               </p>
-              <p className='text-sm font-medium text-white'>
-                Discover a world where <span className='text-[#0081DE] font-semibold'>creativity meets investment</span>, where you can actively participate in the 
-                success of your favorite content creators while reaping unparalleled benefits. 
-                Don't miss out on this exciting chance to connect on a deeper level with the creators you adore. 
-                Join the movement and witness the transformative potential of Creator Tokens as we usher in a new era 
-                of support for artistic brilliance.
+              <p className='text-sm md:text-base font-large text-white'>
+                Discover a world where <span className='text-[#0081DE] font-semibold'>creativity meets investment</span>, where you can actively participate 
+                
+                in the success of your favorite content creators while reaping unparalleled benefits. Don't miss 
+                
+                out on this exciting chance to connect on a deeper level with the creators you adore. 
+              
+                Join the movement and witness the transformative potential Innox offers as we usher
+                
+                in a new era of support for artistic brilliance.
               </p>
           </div>
         </div>
-        <div className='w-full md:w-[50%] flex flex-wrap justify-center gap-8 md:justify-between'>
+        <div className='w-full md:w-[40%] flex flex-col'>
           <TabComponent options={options} selected={selectedTab} setSelected={setSelectedTab}  />
           {selectedTab.value === 'token' ? <Token /> : ''}
           {selectedTab.value === 'content' ? <Content /> : ''}
@@ -67,8 +77,10 @@ const Token = () => {
   return (
     <div className="flex flex-col w-full h-[500px] animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16">
       <p className="text-white text-sm">Offer your fans your own token! Full Ownsership & Personalization</p>
+      <br />
+      <br />
       <div className="w-full flex mt-6">
-        <div className="w-[40%] flex flex-col justify-between">
+        <div className="w-[30%] flex flex-col justify-between">
           <div className="flex flex-col text-center self-end pr-6">
             <p className="text-white text-[18px] font-semibold mt-6">28,981</p>
             <p className="text-white text-sm">Tokens Minted</p>
@@ -83,10 +95,10 @@ const Token = () => {
             <p className="text-white text-sm">Token Price</p>
           </div>
         </div>
-        <div className="w-[60%] flex flex-col items-center">
+        <div className="w-[50%] flex flex-col items-center">
           <Image 
             src={'/assets/images/example-token.svg'}
-            className='block mx-6 w-[100%]'
+            className='block mx-6 w-[80%]'
             alt=''
             width={300}
             height={60}
@@ -104,21 +116,21 @@ const Content = () => {
     <div className="flex flex-col w-full h-[500px] animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16">
       <p className="text-white text-sm">Provide your token holders with early access & exclusive content.</p>
       <div className="w-full flex justify-center mt-6">
-        <div className="flex flex-col w-[75%]">
+        <div className="flex flex-col w-full md:w-[75%] ">
           <Image 
             src={'/assets/images/example-content.svg'}
-            className='block w-[100%] mb-6'
+            className='block w-[80%] mb-6 ml-10'
             alt=''
             width={300}
             height={60}
           />
           <div className="flex flex-col">
-            <p className="text-white font-semibold text-[18px] mb-3">She ACTUALLY Shocked Me!</p>
-            <p className="text-white text-sm mb-3 font-poppins">In this video, I go to the gym with a shock collar and literally "shock my muscles" as a prank. I also rizz up gym girls, meet some cool...</p>
-            <small className="mb-3 text-white font-semibold">Read More</small>
+            <p className="text-white font-semibold text-[18px] mb-3 ml-10">She ACTUALLY Shocked Me!</p>
+            <p className="text-white text-sm mb-3 font-poppins ml-10">In this video, I go to the gym with a shock collar and literally "shock my muscles" as a prank. I also rizz up gym girls, meet some cool...</p>
+            <small className="mb-3 text-white font-semibold ml-10">Read More</small>
             <div className="flex space-x-6">
-              <small className="text-white">2 days ago</small>
-              <small className="text-white flex">
+              <small className="text-white ml-10 text-[10px] md:text-[80%]">2 days ago</small>
+              <small className="text-white text-[10px] md:text-[80%] flex items-center">
                 <Image 
                   src={'/assets/images/like.svg'}
                   className='block mx-3'
@@ -128,7 +140,7 @@ const Content = () => {
                 />
                 1.8k Likes
               </small>
-              <small className="text-white flex">
+              <small className="text-white text-[10px] md:text-[80%] flex items-center">
                 <Image 
                   src={'/assets/images/comment.svg'}
                   className='block mx-3'

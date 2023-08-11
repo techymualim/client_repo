@@ -5,10 +5,10 @@ import HeroIllustrations from './hero-illustrations';
 
 export default function Hero() {
   return (
-    <section className='flex flex-col items-center py-8 hero-custom section-mobile'>
+    <section className='flex flex-col items-center py-10 mt-24 section-mobile min-h-fit'>
       <div className='w-full relative duration-1000 animate-in slide-in-from-top-64'>
         <div className='flex items-center justify-center gap-4 mb-3'>
-          <h1 className='sm:text-[30px] md:text-[36px] font-bold text-center'>
+          <h1 className='text-[30px] md:text-[36px] font-bold text-center'>
             <span className='text-white capitalize'>
               Invest and grow in your{' '}
             </span>
@@ -18,14 +18,14 @@ export default function Hero() {
             </span>
           </h1>
         </div>
-        <div className='flex flex-col items-center justify-center gap-4 mb-3 sm:flex-row sm:items-center'>
+        <div className='flex flex-col items-center justify-center gap-4 mb-3 sm:flex-row sm:items-center px-6 md:px-0'>
           <Image
             src={'/assets/images/buy-sell.svg'}
             alt=''
             width={70}
             height={70}
           />
-          <h3 className='text-[15px] font-medium text-center mt-6 mb-6 sm:text-left'>
+          <h3 className='text-sm md:text-base font-medium text-center mt-6 mb-10 sm:text-left'>
             <span className='text-slate-500'>
               Welcome to the first marketplace that allows you to{' '}
             </span>
@@ -37,7 +37,7 @@ export default function Hero() {
           </h3>
         </div>
 
-        <div className='flex justify-center items-center gap-5 mb-6'>
+        <div className='flex justify-center items-center gap-5 mb-20 mt-10'>
           <Button className='button-custom font-semibold'>
             <a
               href='https://dki9lqeawlk.typeform.com/to/BjOF4pL4'

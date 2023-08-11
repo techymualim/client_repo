@@ -27,11 +27,11 @@ export default function Working() {
           }
         `}
       </style>
-      <h3 className='min-w-[282px] text-white text-center text-[36px] font-bold'>
+      <h3 className='min-w-[282px] text-white text-center text-[30px] md:text-[36px] font-bold mb-16'>
         How it works?
       </h3>
-      <div className='flex justify-center gap-10 my-4'>
-        <div className='mt-6'>
+      <div className='flex justify-center gap-10'>
+        <div className='my-8'>
           <ToggleSwitch options={toggleOptions} onSelect={handleToggle} />
         </div>
       </div>
@@ -52,15 +52,16 @@ export default function Working() {
 
 const CreatorContent = () => {
   return (
-    <div className='flex flex-col md:flex-row animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16 w-full'>
+    <div className='flex flex-col md:flex-row animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16 w-full px-6 md:px-0'>
       <div className='w-full md:w-[40%] flex flex-col items-end text-center md:text-start'>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mb-[10%] md:mb-[25%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Set up your wallet</p>
-          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Create an account as a “content creator” by connecting your wallet</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Create an account as a “content creator” by connecting your wallet</p>
+          <p className='text-sm md:text-base font-bold text-blue-500 capitalize mt-3'>HOW TO CREATE WALLET?</p>
         </div>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Personalize Token</p>
-          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Navigate to your profile page and create your token. Follow the steps and click the create button to deploy token</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Navigate to your profile page and create your token. Follow the steps and click the create button to deploy token</p>
         </div>
       </div>
       <div className='w-[20%] hidden sm:flex justify-center'>
@@ -75,11 +76,11 @@ const CreatorContent = () => {
       <div className='w-full md:w-[40%] flex flex-col items-start text-center md:text-start'>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mt-[10%] md:mt-[25%] mb-[10%] md:mb-[25%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Verify channel</p>
-          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Verify any of your social media channels. This will serve as proof that you are the legitimate content creator of the token</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Verify any of your social media channels. This will serve as proof that you are the legitimate content creator of the token</p>
         </div>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>List in marketplace</p>
-          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Share your token with your fans so the minting phase can begin and your fans can start trading your token and accessing exclusive offerings</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Share your token with your fans so the minting phase can begin and your fans can start trading your token and accessing exclusive offerings</p>
         </div>
       </div>
     </div>
@@ -88,15 +89,15 @@ const CreatorContent = () => {
 
 const UserContent = () => {
   return (
-    <div className='flex flex-col md:flex-row animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16 w-full'>
+    <div className='flex flex-col md:flex-row animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16 w-full px-6 md:px-0'>
       <div className='w-full md:w-[40%] flex flex-col items-end text-center md:text-start'>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mb-[25%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Create an account</p>
-          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Create an account as a “user”.</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Create an account as a “user”.</p>
         </div>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Support your content creator</p>
-          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Start investing in your favorite content creators and access their exclusive offerings. You will see the tokens you own by accesing your metamask wallet.</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Start investing in your favorite content creators and access their exclusive offerings. You will see the tokens you own by accesing your metamask wallet.</p>
         </div>
       </div>
       <div className='w-[20%] hidden sm:flex justify-center'>
@@ -111,7 +112,8 @@ const UserContent = () => {
       <div className='w-full md:w-[40%] flex flex-col items-start text-center md:text-start'>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mt-[25%] md:mt-[25%] mb-[25%] md:mb-[25%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Connect wallet</p>
-          <p className='text-[12px] md:text-[15px] text-slate-500 capitalize mt-3'>Connect your wallet to buy tokens. Add funds if needed directly through the metamask app or using your credit card.</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Connect your wallet to buy tokens. Add funds if needed directly through the metamask app or using your credit card.</p>
+          <p className='text-sm md:text-base font-bold text-blue-500 capitalize mt-3'>HOW TO CREATE WALLET & ADD FUNDS?</p>
         </div>
       </div>
     </div>

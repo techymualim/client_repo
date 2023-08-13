@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { Option } from '@/types/option';
 
-const Accordion = ({ activeSection, setActiveSection }: { activeSection: string | null; setActiveSection: React.Dispatch<React.SetStateAction<string | null>> }) => {
+const Accordion = ({ options, activeSection, setActiveSection }: 
+    { 
+        options: Array<Option>;
+        activeSection: Option | null; 
+        setActiveSection: Dispatch<SetStateAction<Option | null>>
+    }) => {
 
     const toggleSection = (sectionId: string) => {
-        setActiveSection(activeSection === sectionId ? null : sectionId);
+        const section = options.find(item => item.value === sectionId)
+        if (section) setActiveSection(activeSection?.value === sectionId ? null : section);
     };
 
     return (
@@ -24,10 +30,10 @@ const Accordion = ({ activeSection, setActiveSection }: { activeSection: string 
             {sections.map((section) => (
                 <div key={section.id}>
                     <button
-                        className={`flex items-center p-3 pr-6 ${activeSection === section.id ? 'bg-opacity-10 bg-white text-white rounded-lg border-2 border-blue-500 w-[fit-content]' : ''}`}
+                        className={`flex items-center p-3 pr-6 ${activeSection?.value === section.id ? 'bg-opacity-10 bg-white text-white rounded-lg border-2 border-blue-500 w-[fit-content]' : ''}`}
                         onClick={() => toggleSection(section.id)}
                     >
-                        <span className={`transform transition-transform ${activeSection === section.id ? 'rotate-90' : 'rotate-270'}`}>
+                        <span className={`transform transition-transform ${activeSection?.value === section.id ? 'rotate-90' : 'rotate-270'}`}>
                             <Image
                                 src='/assets/images/arrow2.svg'
                                 alt='arrow icon'
@@ -38,7 +44,7 @@ const Accordion = ({ activeSection, setActiveSection }: { activeSection: string 
                         {section.title}
                     </button>
                     <div
-                        className={`flex flex-col overflow-hidden transition-max-height ${activeSection === section.id ? 'max-h-96' : 'max-h-0'
+                        className={`flex flex-col overflow-hidden transition-max-height ${activeSection?.value === section.id ? 'max-h-96' : 'max-h-0'
                             }`}
                     >
                         {section?.content?.map(item => (

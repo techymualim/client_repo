@@ -4,6 +4,7 @@
 import TabComponent from "@/components/ui/tab";
 import { useState } from 'react';
 import Image from "next/image";
+import { Option } from "@/types/option";
 
 const options = [
   {
@@ -25,7 +26,7 @@ const options = [
 ]
 
 export default function CreatorToken() {
-  const [selectedTab, setSelectedTab] = useState(options[0]);
+  const [selectedTab, setSelectedTab] = useState<Option | null>(options[0]);
   return (
     <section className='container min-h-[fit-content] mb-24 section-mobile-3 px-0'>
       <h3 className='min-w-[282px] text-white text-center text-[30px] md:text-[36px] font-bold mb-16'>
@@ -63,10 +64,10 @@ export default function CreatorToken() {
         </div>
         <div className='w-full md:w-[40%] flex flex-col'>
           <TabComponent options={options} selected={selectedTab} setSelected={setSelectedTab}  />
-          {selectedTab.value === 'token' ? <Token /> : ''}
-          {selectedTab.value === 'content' ? <Content /> : ''}
-          {selectedTab.value === 'giveaways' ? <Giveaways /> : ''}
-          {selectedTab.value === 'merch' ? <MerchShop /> : ''}
+          {selectedTab?.value === 'token' ? <Token /> : ''}
+          {selectedTab?.value === 'content' ? <Content /> : ''}
+          {selectedTab?.value === 'giveaways' ? <Giveaways /> : ''}
+          {selectedTab?.value === 'merch' ? <MerchShop /> : ''}
         </div>
       </div>
     </section>

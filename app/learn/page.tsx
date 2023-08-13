@@ -10,12 +10,14 @@ import FAQSContent from './faqs-content';
 import { useSearchParams } from 'next/navigation';
 import TabContents from './tab-contents';
 import Stars from '@/components/ui/stars';
+import { Option } from "@/types/option";
 
 export default function Page() {
   const searchParams = useSearchParams()
 
   const topic = searchParams.get('topic')?.toLowerCase()
-  const [activeSection, setActiveSection] = useState<string | null>(topic || null);
+  const section = options.find(item => item.value === topic)
+  const [activeSection, setActiveSection] = useState<Option | null>(section || null);
   const [starsVisible, setStarsVisible] = useState<boolean>(false);
 
   useEffect(() => {
@@ -52,16 +54,17 @@ export default function Page() {
         <div className='w-full h-full flex flex-col md:flex-row'>
           <div className='w-full md:h-full md:min-h-screen md:w-[30%] md:sticky md:top-0'>
             <Accordion
+              options={options}
               activeSection={activeSection}
               setActiveSection={setActiveSection}
             />
           </div>
 
           <div className='w-full md:w-[70%] mb-[100vh] mt-8 md:mt-0'>
-            {activeSection === 'blockchain' && <BlockchainContent />}
-            {activeSection === 'tokens' && <TokensContent />}
-            {activeSection === 'creator-tokens' && <CreatorContent />}
-            {activeSection === 'faqs' && <FAQSContent />}
+            {activeSection?.value === 'blockchain' && <BlockchainContent />}
+            {activeSection?.value === 'tokens' && <TokensContent />}
+            {activeSection?.value === 'creator-tokens' && <CreatorContent />}
+            {activeSection?.value === 'faqs' && <FAQSContent />}
           </div>
         </div>
       </section>

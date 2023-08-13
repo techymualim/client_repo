@@ -26,7 +26,7 @@ const options = [
 ]
 
 export default function CreatorToken() {
-  const [selectedTab, setSelectedTab] = useState<Option | string | null>(options[0]);
+  const [selectedTab, setSelectedTab] = useState< Option | string | null>(options[0]);
   return (
     <section className='container min-h-[fit-content] mb-24 section-mobile-3 px-0'>
       <h3 className='min-w-[282px] text-white text-center text-[30px] md:text-[36px] font-bold mb-16'>

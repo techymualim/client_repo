@@ -38,15 +38,15 @@ export default function Hero() {
         </div>
 
         <div className='flex justify-center items-center gap-5 mb-20 mt-10'>
-          <Button className='button-custom font-semibold'>
-            <a
-              href='https://dki9lqeawlk.typeform.com/to/BjOF4pL4'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Explore Creator
-            </a>
-          </Button>
+        <Button className='button-custom font-semibold'>
+  <a
+    href='/learn'  // Update the relative URL based on your project structure
+    target='_blank'
+    rel='noopener noreferrer'
+  >
+    Learn More
+  </a>
+</Button>
           <Button outline className='font-semibold text-white'>
             <a
               href='https://dki9lqeawlk.typeform.com/to/LPzOnbOk'

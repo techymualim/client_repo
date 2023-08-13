@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-
-interface Option {
-    label: string,
-    value: string,
-}
+import { Option } from "@/types/option";
 
 interface Props {
     options: Array<Option>

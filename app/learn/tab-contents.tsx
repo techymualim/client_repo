@@ -1,13 +1,14 @@
 import TabComponent from "@/components/ui/tab"
+import { Dispatch, SetStateAction } from "react";
+import { Option } from "@/types/option";
 
-interface Option {
-    label: string,
-    value: string,
-}
-
-const TabContents = ({options, activeSection, setActiveSection}:{ options: Array<Option>; activeSection:Option | string | null; setActiveSection: (value: string | null) => void }) => {
+const TabContents = ({options, activeSection, setActiveSection}:
+    { options: Array<Option>; 
+        activeSection: Option | null; 
+        setActiveSection: Dispatch<SetStateAction<Option | null>>
+    }) => {
     return (
-        <TabComponent options={options} selected={activeSection} setSelected={setActiveSection} simple noMargin />
+        <TabComponent options={options} selected={activeSection} setSelected={setActiveSection} noMargin />
     )
 }
 

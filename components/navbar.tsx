@@ -14,8 +14,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <section className='z-20'>
-      <nav className={`container flex justify-between items-center mt-8 navbar-custom`}>
+    <section className='z-20 pt-8'>
+      <nav className={`container flex justify-between items-center navbar-custom`}>
         <Brand pathname={pathname} />
         <NavContent pathname={pathname} />
         <Action />

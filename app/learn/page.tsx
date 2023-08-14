@@ -11,6 +11,7 @@ import { useSearchParams } from 'next/navigation';
 import TabContents from './tab-contents';
 import Stars from '@/components/ui/stars';
 import { Option } from "@/types/option";
+import AccountCreationContent from './account-creation-content';
 
 export default function Page() {
   const searchParams = useSearchParams()
@@ -61,6 +62,7 @@ export default function Page() {
           </div>
 
           <div className='w-full md:w-[70%] mb-[100vh] mt-8 md:mt-0'>
+            {activeSection?.value === 'account-creation' && <AccountCreationContent />}
             {activeSection?.value === 'blockchain' && <BlockchainContent />}
             {activeSection?.value === 'tokens' && <TokensContent />}
             {activeSection?.value === 'creator-tokens' && <CreatorContent />}
@@ -80,6 +82,10 @@ export default function Page() {
 }
 
 const options = [
+  {
+    label: 'Account Creation',
+    value: 'account-creation',
+  },
   {
     label: 'Blockchain',
     value: 'blockchain',

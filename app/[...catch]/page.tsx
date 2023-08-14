@@ -1,10 +1,14 @@
+'use client'
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
+import React, {useEffect} from 'react';
 import Stars from '@/components/ui/stars';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Page() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className='background-custom' />

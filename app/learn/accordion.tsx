@@ -59,6 +59,11 @@ const Accordion = ({ options, activeSection, setActiveSection }:
 
 export default Accordion;
 
+const accountContent = [
+    { id: 'account-1', value: 'Creating A MetaMask Wallet ' },
+    { id: 'account-2', value: 'Adding Funds to your Wallet' },
+]
+
 const blockchainContent = [
     { id: 'blockchain-1', value: 'What is blockchain technology?' },
     { id: 'blockchain-2', value: 'Blockchain vs traditional databases?' },
@@ -82,6 +87,7 @@ const creatorContent = [
 ]
 
 const sections = [
+    { id: 'account-creation', title: 'Account Creation', content: accountContent },
     { id: 'blockchain', title: 'Blockchain', content: blockchainContent },
     { id: 'tokens', title: 'Tokens', content: tokensContent },
     { id: 'creator-tokens', title: 'Creator Tokens', content: creatorContent },

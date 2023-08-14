@@ -87,7 +87,7 @@ const creatorContent = [
 ]
 
 const sections = [
-    { id: 'account-creation', title: 'Account Creation', content: accountContent },
+    { id: 'account-creation', title: 'My Account', content: accountContent },
     { id: 'blockchain', title: 'Blockchain', content: blockchainContent },
     { id: 'tokens', title: 'Tokens', content: tokensContent },
     { id: 'creator-tokens', title: 'Creator Tokens', content: creatorContent },

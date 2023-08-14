@@ -83,7 +83,7 @@ export default function Page() {
 
 const options = [
   {
-    label: 'Account Creation',
+    label: 'My Account',
     value: 'account-creation',
   },
   {

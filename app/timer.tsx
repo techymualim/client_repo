@@ -3,7 +3,7 @@
 import { useCountdown } from '@/hooks/countdown';
 
 export default function Timer() {
-  const [days, hours, minutes, seconds] = useCountdown('August, 15, 2023');
+  const [days, hours, minutes, seconds] = useCountdown('August, 31, 2023');
 
   return (
     <section className='mb-0 mt-0 md:mb-24 md:mt-36 py-10 section-mobile-2 flex flex-col justify-center items-center md:block'>

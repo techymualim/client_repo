@@ -15,7 +15,7 @@ const Info: React.FC<Props> = ({ item, index }) => {
         <div id={`${item.id}`} className="p-8 pt-0 text-white">
             {
                 item.info.map((item, index) => (
-                    <InfoText key={`${index}` + item.type} type={item.type} content={item.content} />
+                    <InfoText key={`${index}` + item.type} type={item.type} content={item.content} mixedContent={item.type === 'mixed' ? item.content : null} />
                 ))
             }
             <div className='flex justify-center pt-12 pb-6'>

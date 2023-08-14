@@ -17,7 +17,6 @@ export default function Home() {
 
   return (
     <>
-      <div className='background-custom' />
       <Stars />
       <Image
         src={'/assets/images/background-lines.svg'}

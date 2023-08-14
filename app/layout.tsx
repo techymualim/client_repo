@@ -43,6 +43,7 @@ export default function RootLayout({
           }
         `}
         </style>
+        <div className='background-custom' />
         <Navbar />
         <AnimatePresence>
           {children}

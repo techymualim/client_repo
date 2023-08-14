@@ -56,8 +56,8 @@ const CreatorContent = () => {
       <div className='w-full md:w-[40%] flex flex-col items-end text-center md:text-start'>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mb-[10%] md:mb-[25%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Set up your wallet</p>
-          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Create an account as a “content creator” by connecting your wallet</p>
-          <p className='text-sm md:text-base font-bold text-blue-500 capitalize mt-3'>HOW TO CREATE WALLET?</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3 mb-3'>Create an account as a “content creator” by connecting your wallet</p>
+          <a href='/learn?topic=account-creation' className='text-sm md:text-base font-bold text-blue-500 capitalize mt-6'>HOW TO CREATE WALLET?</a>
         </div>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Personalize Token</p>
@@ -112,8 +112,8 @@ const UserContent = () => {
       <div className='w-full md:w-[40%] flex flex-col items-start text-center md:text-start'>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mt-[25%] md:mt-[25%] mb-[25%] md:mb-[25%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Connect wallet</p>
-          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Connect your wallet to buy tokens. Add funds if needed directly through the metamask app or using your credit card.</p>
-          <p className='text-sm md:text-base font-bold text-blue-500 capitalize mt-3'>HOW TO CREATE WALLET & ADD FUNDS?</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3 mb-3'>Connect your wallet to buy tokens. Add funds if needed directly through the metamask app or using your credit card.</p>
+          <a href='/learn?topic=account-creation' className='text-sm md:text-base font-bold text-blue-500 capitalize mt-6'>HOW TO CREATE WALLET & ADD FUNDS?</a>
         </div>
       </div>
     </div>

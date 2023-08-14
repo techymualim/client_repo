@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import Navbar from '@/components/navbar';
 import './globals.css';
 import Footer from '@/components/footer';
@@ -8,7 +9,7 @@ import { usePathname } from 'next/navigation';
 export const metadata = {
   title: 'Innox',
   description: 'Welcome to the first marketplace that allows you to safely and securely invest in content creators through tokens and direct funding solutions.',
-  keywords: 'Innox, content creators, invest, tokens, direct funding, Web3, crypto marketplace, secure investments, innovative content investment, decentralized finance, blockchain, NFTs, content monetization, safe crypto investments'
+  keywords: 'Innox, content creators, invest, tokens, direct funding, Web3, crypto marketplace, secure investments, innovative content investment, decentralized finance, blockchain, NFTs, content monetization, safe crypto investments, investment in content creator, invest in content creators'
 };
 
 export default function RootLayout({
@@ -41,6 +42,7 @@ export default function RootLayout({
           {children}
         </AnimatePresence>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

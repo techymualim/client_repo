@@ -39,7 +39,7 @@ const InfoText: React.FC<TextProps> = ({ type, content, mixedContent }) => {
         type === 'image' && !Array.isArray(content) &&
           <Image 
             src={content}
-            alt='Account Creation tutorial illustration'
+            alt='My Account tutorial illustration'
             layout="responsive"
             className='w-full h-auto md:max-h-[500px] mb-10'
             width={1000}

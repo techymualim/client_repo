@@ -2,6 +2,7 @@
 'use client'
 import React, { useEffect } from 'react';
 import Stars from '@/components/ui/stars';
+import { Subtitle, Paragraph, List } from '@/components/ui/text-components';
 
 const TermsOfService = () => {
     useEffect(() => {
@@ -185,24 +186,4 @@ const TermsOfService = () => {
 };
 
 export default TermsOfService;
-
-const Subtitle = ({text, blue, mbSm}:{text:string; blue?: boolean; mbSm?: boolean}) => {
-    return (<h2 className={`text-lg font-semibold ${mbSm ? 'mb-3' : 'mb-10'}  ${blue ? 'text-[#0081DE]' : ''}`}>{text}</h2>)
-}
-
-const Paragraph = ({text, bold}:{text:string; bold?:boolean}) => {
-    return (<p className={`text-sm md:text-base mb-10 ${bold ? 'font-bold' : ''}`}>{text}</p>)
-}
-
-const List = ({content}:{content:Array<string>}) => {
-    return (
-        <ul className="text-sm md:text-base list-disc list-inside mb-10">
-            {
-                content.map((item, index) => (
-                    <li key={item+index} className='mb-3'>{item}</li>
-                ))
-            }
-        </ul>
-    )
-}
 

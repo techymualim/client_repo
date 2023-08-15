@@ -80,7 +80,8 @@ const data = [
     sub: [
       {name: 'Help & Support', link: '/help-and-support'}, 
       {name: 'Terms of Service', link: '/terms-of-service'}, 
-      {name: 'Privacy Policy', link: '/privacy-policy'}, ]
+      {name: 'Privacy Policy', link: '/privacy-policy'},
+      {name: 'Patent Showcase', link: '/patent-showcase'}, ]
   },
   {
     title: 'Company ',

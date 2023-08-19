@@ -70,7 +70,7 @@ export default function Footer() {
           {/* Centered text */}
           <div className="w-full text-center mt-10">
             <p className={`${pathname !== '/marketplace' ? 'text-white' : 'text-neutral-800'} text-[14px] font-normal leading-snug`}>
-              © 2023 Innox App. All rights reserved. The concept of this platform is protected by patents and copyrights. Unauthorized use, reproduction, or distribution of the platform's concept, design, or content is strictly prohibited and may result in legal action.
+              © 2023 Innox App. All rights reserved. The concept of this platform is protected by patents and copyrights. Unauthorized use, reproduction, or distribution of the platforms concept, design, or content is strictly prohibited and may result in legal action.
             </p>
           </div>
         </section>

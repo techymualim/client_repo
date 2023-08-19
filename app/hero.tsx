@@ -14,7 +14,7 @@ export default function Hero() {
             </span>
             <br />
             <span className='text-white capitalize'>
-              favourite content creators
+              favorite content creators
             </span>
           </h1>
         </div>
@@ -32,7 +32,7 @@ export default function Hero() {
             <span className='text-white'>safely and securely</span> <br />
             <span className='text-slate-500'>
               {' '}
-              invest in content creators through tokens and direct funding solutions.
+              get involved in content creators through tokens, and Blockchain technology.
             </span>
           </h3>
         </div>

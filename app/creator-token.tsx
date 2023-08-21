@@ -40,18 +40,18 @@ export default function CreatorToken() {
                 Unlock an exceptional opportunity to <span className='text-[#0081DE] font-semibold'>support and grow your cherished content
                 creators</span> 
                 <br />
-                through the revolutionary creator tokens. By strategically investing in these tokens, you can
+                through the revolutionary creator tokens. By strategically purchasing in these tokens, you can
                 
                 gain exclusive privileges,  access to early and premium content, limited-edition 
                 merchandise drops, exhilarating giveaway opportunities, and insider communication 
                 offered by your favorite content creators.
-                As a content creator you will be able to create and deploy your own token/currency 
+                As a content creator you will be able to create and deploy your own token 
                 in order for your fans to access exclusive content, giveaways, merch drops you share 
                 through your profile page on our platform
                 
               </p>
               <p className='text-sm md:text-base font-large text-white'>
-                Discover a world where <span className='text-[#0081DE] font-semibold'>creativity meets investment</span>, where you can actively participate 
+                Discover a world where <span className='text-[#0081DE] font-semibold'>creativity meets innovative and unique support through blockchain technology</span>, where you can actively participate 
                 
                 in the success of your favorite content creators while reaping unparalleled benefits. Don't miss 
                 

@@ -14,12 +14,12 @@ export default function DirectFunding() {
                         <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize mb-11'>Channel funding</p>
                         <p className='text-sm md:text-base font-medium text-white mb-4 mr-1'>
                             We believe in the <span className='text-[#0081DE] font-semibold'>power of collaboration</span> and
-                            recognize the immense talent and potential of content creators across various platforms. By investing in a content creator's channel, <span className='text-[#0081DE] font-semibold'>you become an integral
+                            recognize the immense talent and potential of content creators across various platforms. By supporting a content creator' channel financially, <span className='text-[#0081DE] font-semibold'>you become an integral
                                 part of their growth story. </span>
                         </p>
 
                         <p className='text-sm md:text-base font-medium text-white mb-8'>
-                            Your investment provides the <span className='text-[#0081DE] font-semibold'>necessary resources
+                            Your support provides the <span className='text-[#0081DE] font-semibold'>necessary resources
                                 for creators to enhance</span> their production quality, expand their audience reach, and explore
                             new creative avenues.
                         </p>

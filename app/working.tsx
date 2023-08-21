@@ -80,7 +80,7 @@ const CreatorContent = () => {
         </div>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>List in marketplace</p>
-          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Share your token with your fans so the minting phase can begin and your fans can start trading your token and accessing exclusive offerings</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Share your token with your fans so the minting phase can begin and your fans can start acquiring your token and accessing exclusive offerings</p>
         </div>
       </div>
     </div>
@@ -196,8 +196,8 @@ const data = [
     title: 'Start Investing',
     node: (
       <>
-        Start <span className='text-sky-600 '>investing</span> in your favorite
-        content creators.
+        Start <span className='text-sky-600 '>purchasing</span> tokens from your favorite
+        content creators & access exclusive offerings.
         You will see the tokens you own by accesing your metamask wallet
       </>
     ),

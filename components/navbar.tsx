@@ -98,7 +98,7 @@ const Action = () => {
   return (
     <div className='flex items-center bg-white cursor-pointer hover:bg-primary/10 transition-all px-5 gap-2.5 rounded-lg h-8'>
       <Image src={`/assets/images/wallet.svg`} alt='' width={25} height={25} />
-      <p className='text-xs text-foreground font-semibold action-text'>Connect</p>
+      <p className='text-xs text-foreground font-semibold action-text'>Sign up for free</p>
     </div>
   );
 };

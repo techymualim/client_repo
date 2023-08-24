@@ -53,7 +53,7 @@ export default function Hero() {
               target='_blank'
               rel='noopener noreferrer'
             >
-              Are you a Creator?
+              Sign up as a creator
             </a>
           </Button>
         </div>

@@ -27,12 +27,9 @@ export default function Hero() {
           />
           <h3 className='text-sm md:text-base font-medium text-center mt-6 mb-10 sm:text-left'>
             <span className='text-slate-500'>
-              Welcome to the first marketplace that allows you to{' '}
-            </span>
-            <span className='text-white'>safely and securely</span> <br />
-            <span className='text-slate-500'>
-              {' '}
-              get involved in content creators through tokens, and Blockchain technology.
+            Welcome to the first content platform that allows content creators to have their own
+            <br />
+            coin that can be used by fans to access exclusive offerings and invest in your growth.
             </span>
           </h3>
         </div>

@@ -51,15 +51,13 @@ export default function CreatorToken() {
                 
               </p>
               <p className='text-sm md:text-base font-large text-white'>
-                Discover a world where <span className='text-[#0081DE] font-semibold'>creativity meets innovative and unique support through blockchain technology</span>, where you can actively participate 
+              Explore a realm where <span className='text-[#0081DE] font-semibold'> creativity and innovation converge </span>, offering distinctive experiences for creators and their fans through cutting-edge technology.
                 
-                in the success of your favorite content creators while reaping unparalleled benefits. Don't miss 
-                
-                out on this exciting chance to connect on a deeper level with the creators you adore. 
+                Don't miss out on this exciting chance to engage on a deeper level with the creators you truly support. 
               
                 Join the movement and witness the transformative potential Innox offers as we usher
                 
-                in a new era of support for artistic brilliance.
+                in a new era of support & engagement for entertainment industry.
               </p>
           </div>
         </div>

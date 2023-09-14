@@ -195,7 +195,7 @@ const nav = [
     group: true,
     child: [
       { name: "About us", href: "/about" },
-      { name: "Patent", href: "/patent-showcase" },
+      { name: "Innox Patent", href: "/patent-showcase" },
     ],
   },
   { name: "Learn ", href: "/learn", group: false },

@@ -14,7 +14,7 @@ Hotjar.init(siteId, hotjarVersion);
 
 export const metadata = {
   title: 'Innox',
-  description: 'Welcome to the first marketplace that allows you to safely and securely get involved in content creators through the usage of tokens, and Web 3.0 solutions.',
+  description: "Welcome to the first content platform that allows content creators to have their own coin that can be used by fans to access exclusive offerings and invest in your growth.",
   keywords: 'Innox, content creators, invest, tokens, direct funding, Web3, crypto marketplace, secure investments, innovative content investment, decentralized finance, blockchain, NFTs, content monetization, safe crypto investments, investment in content creator, invest in content creators'
 };
 

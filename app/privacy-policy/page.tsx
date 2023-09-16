@@ -3,11 +3,20 @@
 import React, { useEffect } from 'react';
 import Stars from '@/components/ui/stars';
 import { Subtitle, Paragraph, List } from '@/components/ui/text-components';
+import { Helmet } from 'react-helmet-async';
+
 
 const PrivacyPolicy = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const metadata = {
+        title: 'Privacy Policy - Innox App',
+        description: 'Read our Privacy Policy to understand how we collect, use, and protect your personal information when you use our platform.'
+        , keywords: 'Innox, content creators, patent, invest, tokens, direct funding, Web3, crypto marketplace, secure investments, innovative content investment, decentralized finance, blockchain, NFTs, content monetization, safe crypto investments, investment in content creator, invest in content creators'
+        
+    };
     return (
         <>
             <div className='background-custom' />

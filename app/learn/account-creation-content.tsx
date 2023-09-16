@@ -3,7 +3,9 @@ import React from 'react';
 import Image from 'next/image';
 import Info from './info';
 
+
 const AccountCreationContent: React.FC = () => {
+    
     return (
         <>
             {totalContent.map((el, index) => (

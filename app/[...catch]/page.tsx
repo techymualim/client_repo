@@ -4,6 +4,8 @@ import React, {useEffect} from 'react';
 import Stars from '@/components/ui/stars';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Helmet } from 'react-helmet-async'; // Import Helmet
+
 
 export default function Page() {
   useEffect(() => {
@@ -11,6 +13,14 @@ export default function Page() {
   }, []);
   return (
     <>
+    <Helmet>
+        <title>About us - Transforming the Digital Investment Landscape</title>
+        <meta
+          name="description"
+          content="Welcome to Innox! Explore our platform that transforms the relationship between content creators and fans into a captivating experience. Learn about creator tokens and our mission to revolutionize the digital investment landscape."
+        />
+      </Helmet>
+    
       <div className='background-custom' />
       <Stars />
       <section className='container container-custom flex flex-col min-h-screen place-content-center py-10 mt-24 mb-32'>

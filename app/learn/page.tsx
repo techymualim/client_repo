@@ -12,6 +12,7 @@ import TabContents from './tab-contents';
 import Stars from '@/components/ui/stars';
 import { Option } from "@/types/option";
 import AccountCreationContent from './account-creation-content';
+import { Helmet } from 'react-helmet-async';
 
 export default function Page() {
   const searchParams = useSearchParams()
@@ -34,8 +35,18 @@ export default function Page() {
     if (starsVisible) {
       return <Stars quantity={10} />;
     }
+
+    
     return null;
   }, [starsVisible]);
+
+  <Helmet>
+        <title>Learn - Innox App</title>
+        <meta
+          name="description"
+          content="Explore Innox and learn about content creation, blockchain, tokens, creator tokens, and FAQs. Get insights into the world of content creation and tokenization."
+        />
+      </Helmet>
 
   return (
     <>

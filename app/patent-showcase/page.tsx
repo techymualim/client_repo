@@ -4,11 +4,23 @@ import React, { useEffect } from 'react';
 import Stars from '@/components/ui/stars';
 import { Subtitle, Paragraph, List } from '@/components/ui/text-components';
 import Image from 'next/image';
+import { Helmet } from 'react-helmet-async';
+
 
 const PatentShowcase = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
+
     }, []);
+    
+    const metadata = {
+        title: 'Patent Showcase - Innox App',
+        description: 'Explore Innox\'s patent showcase featuring innovative ways to empower content creators and fans through custom ERC-20 tokens. Learn how creators and fans can benefit from this groundbreaking concept.'
+        , keywords: 'Innox, content creators, patent, invest, tokens, direct funding, Web3, crypto marketplace, secure investments, innovative content investment, decentralized finance, blockchain, NFTs, content monetization, safe crypto investments, investment in content creator, invest in content creators'
+        
+    };
+
+    
     return (
         <>
             <div className='background-custom' />

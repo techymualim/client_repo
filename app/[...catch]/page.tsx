@@ -4,8 +4,8 @@ import React, {useEffect} from 'react';
 import Stars from '@/components/ui/stars';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Helmet } from 'react-helmet';
- // Import Helmet
+import Head from 'next/head';
+
 
 
 export default function Page() {
@@ -14,13 +14,13 @@ export default function Page() {
   }, []);
   return (
     <>
-    <Helmet>
+  <Head>
         <title>About us - Transforming the Digital Investment Landscape</title>
         <meta
           name="description"
           content="Welcome to Innox! Explore our platform that transforms the relationship between content creators and fans into a captivating experience. Learn about creator tokens and our mission to revolutionize the digital investment landscape."
         />
-      </Helmet>
+      </Head>
     
       <div className='background-custom' />
       <Stars />

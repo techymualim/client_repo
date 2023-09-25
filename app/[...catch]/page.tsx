@@ -4,7 +4,8 @@ import React, {useEffect} from 'react';
 import Stars from '@/components/ui/stars';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Helmet } from 'react-helmet-async'; // Import Helmet
+import { Helmet } from 'react-helmet';
+ // Import Helmet
 
 
 export default function Page() {
@@ -54,7 +55,7 @@ export default function Page() {
           </p>
           <br />
           <p>
-            Join us on this remarkable journey as we usher in a new era of investment, growth, and collaboration. Together, we will unlock unprecedented opportunities for creators, redefine the relationship between fans and content creators, and revolutionize the way the world values and supports creative endeavors.
+            Join us on this remarkable journey as we embark in a new era of investment, growth, and collaboration. Together, we will unlock unprecedented opportunities for creators, redefine the relationship between fans and content creators, and revolutionize the way the world values and supports creative endeavors.
           </p>
           <br />
           <p>

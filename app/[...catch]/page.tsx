@@ -30,14 +30,14 @@ export default function Page() {
           <div className='w-full md:w-[50%]'>
             <h1 className='text-[24px] md:text-[36px] text-center md:text-start font-bold mb-14 mt-20 text-white'>Transforming the Digital Investment Landscape</h1>
             <p className='text-base mb-14 leading-relaxed text-white' style={{ marginBottom: '1.4em' }}>
-            Welcome to Innox! Discover the enchanting world where a new era of connection unfolds! We are delighted to present a pioneering platform that transforms the relationship between content creators and their devoted fans into a captivating experience. Creator tokens possess exciting new properties: they are unique, tradable, and usable in many ways. Whether you want to support your favorite creators, gift tokens to each other,  trade them on an open marketplace, access exclusive content and giveaways, the possibilities are limitless.
+            Welcome to Innox! Discover the enchanting world where a new era of connection unfolds! We are delighted to present a pioneering platform that transforms the relationship between content creators and their devoted fans into a captivating experience. Creator tokens possess exciting new properties: they are unique, tradable, and usable in many ways. Whether you want to support your favorite creators, gift tokens to each other, swap them for other creators, access exclusive content and giveaways, the possibilities are limitless.
 
             </p>
             <p className='text-base mb-14 leading-relaxed text-white' style={{ marginBottom: '1.4em' }}>
-              Our unwavering dedication lies in building state-of-the-art tools that empower consumers to engage in free and seamless trading of creator tokens. We strive to provide creators with the means to launch groundbreaking digital works, pushing the boundaries of innovation. Additionally we support creators through the process in order to make their adaptation of this new technology as smooth and simple as possible.
+              Our unwavering dedication lies in building state-of-the-art tools that empower users to engage in free and seamless activities through creator tokens. We strive to provide creators with the means to launch their own token, pushing the boundaries of innovation. Additionally we support creators through the process in order to make their adaptation of this new technology as smooth and simple as possible.
             </p>
             <p className='text-base leading-relaxed text-white' style={{ marginBottom: '1.4em' }}>
-              By embracing these cutting-edge technologies and fostering an environment of innovation and collaboration, we aim to shape a future where creator tokens revolutionize the way we engage with digital content. At Innox, we are committed to building the infrastructure that empowers creators, investors, and enthusiasts to participate in a thriving and interconnected ecosystem of digital assets.
+              By embracing these cutting-edge technologies and fostering an environment of innovation and collaboration, we aim to shape a future where creator tokens revolutionize the way we engage with digital content. At Innox, we are committed to building the infrastructure that empowers creators & their fans to participate in a thriving and interconnected ecosystem of creator tokens.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export default function Page() {
         {/* Additional Paragraphs */}
         <div className="my-10 md:my-5 text-base leading-relaxed text-white" style={{ lineHeight: '1.4', marginBottom: '1.4em' }}>
           <p>
-            As trailblazers in the token space, we take immense pride in being the first marketplace for investing in content creators. Our platform provides a secure and vibrant environment where creators, fans, and investors converge to explore, engage with, and support the visionary talents shaping the content creation landscape.
+            As trailblazers in the token space, we take immense pride in being the first marketplace that allows fans to support their favorite creators through creator tokens. Our platform provides a secure and vibrant environment where creators, fans, and investors converge to explore, engage with, and support the visionary talents shaping the content creation landscape.
           </p>
           <br />
           <p>

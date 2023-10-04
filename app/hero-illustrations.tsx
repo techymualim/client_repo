@@ -41,12 +41,12 @@ export default function HeroIllustrations() {
 
     <div className="w-full md:w-1/3 mt-4 md:mt-0 flex">
       <div className="w-1/2 flex flex-col items-center justify-center text-center md:text-left">
-        <p className='text-[36px] text-white font-bold'>30K<span className='text-blue'>+</span></p>
-        <p className='text-slate-500 text-sm md:text-base'>Tokens Minted</p>
+        <p className='text-[36px] text-white font-bold'>120<span className='text-blue'>+</span></p>
+        <p className='text-slate-500 text-sm md:text-base'>Creators Funded</p>
       </div>
       <div className="w-1/2 flex flex-col items-center justify-center text-center md:text-left">
-        <p className='text-[36px] text-white font-bold'>1120<span className='text-blue'>+</span></p>
-        <p className='text-slate-500 text-sm md:text-base'>Holders</p>
+        <p className='text-[36px] text-white font-bold'>$1.7M<span className='text-blue'>+</span></p>
+        <p className='text-slate-500 text-sm md:text-base'>Total Payout</p>
       </div>
     </div>
   </div>
@@ -65,11 +65,7 @@ const data = [
     {
         className: '',
         value: '$12,34',
-        caption: (
-            <p className=' text-center text-violet-600 text-[10px] font-semibold'>
-                16,97 MATIC
-            </p>
-        ),
+        
         label: 'Token Price',
     },
     {

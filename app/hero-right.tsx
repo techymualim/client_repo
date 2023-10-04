@@ -41,7 +41,7 @@ export default function HeroRight() {
 }
 
 const data = [
-  { label: 'Tokens Minted', className: 'translate-x-4', value: '30K' },
+  { label: 'Creators so far', className: 'translate-x-4', value: '120+' },
   {
     className: '-translate-x-1',
     value: '1120',
@@ -50,11 +50,9 @@ const data = [
   {
     className: '',
     value: '$12,34',
-    caption: (
-      <p className=' text-center text-violet-600 text-[10px] font-semibold'>
-        16,97 MATIC
-      </p>
-    ),
+   
+      
+   
     label: 'Token Price',
   },
   {

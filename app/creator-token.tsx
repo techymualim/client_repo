@@ -83,7 +83,7 @@ const Token = () => {
         <div className="w-[30%] flex flex-col justify-between">
           <div className="flex flex-col text-center self-end pr-6">
             <p className="text-white text-[18px] font-semibold mt-6">28,981</p>
-            <p className="text-white text-sm">Tokens Minted</p>
+            <p className="text-white text-sm">Tokens Sold</p>
           </div>
           <div className="flex flex-col text-center self-center">
             <p className="text-white text-[18px] font-semibold mt-6">1120</p>
@@ -91,7 +91,7 @@ const Token = () => {
           </div>
           <div className="flex flex-col text-center self-end">
             <p className="text-white text-[18px] font-semibold mt-6">$12,34</p>
-            <small className="text-[#CAABFF] text-[8px]">16,97 MATIC</small>
+            
             <p className="text-white text-sm">Token Price</p>
           </div>
         </div>

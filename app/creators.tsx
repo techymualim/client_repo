@@ -65,25 +65,25 @@ const data = [
     photo: '/assets/images/new-hero/new-animoji-1.svg',
     caption: '$LEOST',
     title: 'Leo Sterling',
-    value: '54.2 MATIC',
+    value: '$54.21',
   },
 
   {
     photo: '/assets/images/new-hero/new-animoji-2.svg',
     caption: '$HAJET',
     title: 'Harper Jetson',
-    value: '12.1 MATIC',
+    value: '$12.12 ',
   },
   {
     photo: '/assets/images/new-hero/new-animoji-3.svg',
     caption: '$AISHM',
     title: 'Aisha Mohammed',
-    value: '59.23 MATIC',
+    value: '$91.23',
   },
   {
     photo: '/assets/images/new-hero/new-animoji-4.svg',
     caption: '$MALJO',
     title: 'Malik Johnson',
-    value: '12.34 MATIC',
+    value: '$12.34',
   },
 ];

@@ -5,7 +5,7 @@ import Footer from '@/components/footer';
 import AnimatePresence from '@/context/animate-presence';
 import React from 'react';
 import { usePathname } from 'next/navigation';
-import Hotjar from '@hotjar/browser';
+
 
 const siteId = 3612664;
 const hotjarVersion = 6;

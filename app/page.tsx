@@ -9,10 +9,7 @@ import Image from 'next/image';
 import Stars from '@/components/ui/stars';
 
 
-const siteId = 3612664;
-const hotjarVersion = 6;
 
-Hotjar.init(siteId, hotjarVersion);
 export default function Home() {
 
   return (

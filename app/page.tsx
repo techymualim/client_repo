@@ -7,7 +7,7 @@ import Working from './working';
 import DirectFunding from './direct-funding';
 import Image from 'next/image';
 import Stars from '@/components/ui/stars';
-import Hotjar from '@hotjar/browser';
+
 
 const siteId = 3612664;
 const hotjarVersion = 6;

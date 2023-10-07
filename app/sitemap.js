@@ -1,9 +1,8 @@
-const { SitemapStream } = require('sitemap');
+import { SitemapStream, streamToPromise } from 'sitemap';
+import { Readable } from 'stream';
 
-module.exports = {
-  getStaticProps() {
-    const sitemapStream = new SitemapStream();
-
+export default async function generateSitemap(req, res) {
+  try {
     const links = [
       'https://www.innoxbeta.com/',
       'https://www.innoxbeta.com/#how-it-works',
@@ -19,25 +18,26 @@ module.exports = {
       'https://www.innoxbeta.com/learn?topic=faqs',
     ];
 
+    const sitemapStream = new SitemapStream({
+      hostname: 'https://www.innoxbeta.com', // Replace with your website URL
+    });
+
     for (const link of links) {
       sitemapStream.write({
-        loc: link,
-        lastmod: new Date().toISOString(),
+        url: link,
         changefreq: 'daily',
         priority: 1.0,
       });
     }
 
     sitemapStream.end();
-    return {
-      props: {
-        sitemap: sitemapStream,
-      },
-    };
-  },
+    const sitemap = await streamToPromise(Readable.from([sitemapStream]));
 
-  render() {
-    return this.props.sitemap;
-  },
-};
-
+    res.setHeader('Content-Type', 'application/xml');
+    res.write(sitemap);
+    res.end();
+  } catch (error) {
+    console.error(error);
+    res.status(500).end();
+  }
+}

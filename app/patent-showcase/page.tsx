@@ -14,10 +14,9 @@ const PatentShowcase = () => {
     }, []);
     
     const metadata = {
-        title: 'Patent Showcase - Innox App',
-        description: 'Explore Innox\'s patent showcase featuring innovative ways to empower content creators and fans through custom ERC-20 tokens. Learn how creators and fans can benefit from this groundbreaking concept.'
-        , keywords: 'Innox, content creators, patent, invest, tokens, direct funding, Web3, crypto marketplace, secure investments, innovative content investment, decentralized finance, blockchain, NFTs, content monetization, safe crypto investments, investment in content creator, invest in content creators'
-        
+        title: 'Innovative Patent Showcase - Innox App',
+        description: 'Explore Innox\'s patent showcase, featuring cutting-edge ways to empower content creators and fans through custom ERC-20 tokens. Learn how creators and fans can benefit from this groundbreaking concept, revolutionizing digital content interaction.',
+        keywords: 'patent-pending, intellectual property, Web3 innovation, content creator empowerment, fan engagement, exclusive content, giveaways, merchandise, creator economy, decentralized finance, blockchain technology, NFTs, Web3 ecosystem, future of content creation',
     };
 
     

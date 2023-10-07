@@ -7,10 +7,9 @@ import React from 'react';
 import { usePathname } from 'next/navigation';
 
 
-const siteId = 3612664;
-const hotjarVersion = 6;
 
-Hotjar.init(siteId, hotjarVersion);
+
+
 
 export const metadata = {
   title: 'Innox',

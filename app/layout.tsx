@@ -6,11 +6,6 @@ import AnimatePresence from '@/context/animate-presence';
 import React from 'react';
 import { usePathname } from 'next/navigation';
 
-
-
-
-
-
 export const metadata = {
   title: 'Innox',
   description: "Welcome to the first content platform that allows content creators to have their own coin that can be used by fans to access exclusive offerings and invest in your growth.",

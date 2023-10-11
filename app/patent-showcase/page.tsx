@@ -39,6 +39,10 @@ const PatentShowcase = () => {
                         <Subtitle text={'Grant Date: '} />
                         <Subtitle regular text={'27/07/2023'} />
                     </div>
+                    <div className='flex items-end gap-3'>
+                        <Subtitle text={'Patent Number: '} />
+                        <Subtitle regular text={'WO 2023/20231'} />
+                    </div>
                     <Subtitle text={'Abstract:'} />
                     <Paragraph text={'This patent introduces an innovative approach to content engagement, enabling content creators to mint their own unique ERC-20 tokens on Innox. These tokens serve as exclusive gateways, granting fans access to personalized content, giveaways, and merchandise offered by creators. By fostering a direct connection between creators and fans, this patent revolutionizes the dynamics of digital content interaction.'} />
                     <Subtitle text={'Detailed Description: '} />
@@ -58,9 +62,7 @@ const PatentShowcase = () => {
                     <Subtitle text={'Patent Drawing (Simplified):'} />
                     <Paragraph underline text={'Figure 1: ERC-20 Token Creation & Minting Process'} />
                     <Paragraph text={'- Represents content creators minting their unique tokens.'} />
-                    <div className='w-full overflow-hidden md:max-h-[800px] flex items-center justify-center'>
-                        <Image src={'/assets/images/patent-showcase/desktop.svg'} alt='Minting Process' className='w-[80%] h-auto hidden md:block' height={500} width={1000} />
-                    </div>
+            
                     <Image src={'/assets/images/patent-showcase/mobile.svg'} alt='Minting Process' className='w-full h-auto block md:hidden' height={200} width={400} />
                     <Paragraph underline text={'Figure 2: ERC-20 Token Ecosystem'} />
                     <Paragraph text={'- Showcases the exclusive content, giveaways, and merchandise accessible using these tokens.'} />

@@ -3,22 +3,30 @@
 import React, { useEffect } from 'react';
 import Stars from '@/components/ui/stars';
 import { Subtitle, Paragraph, List } from '@/components/ui/text-components';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 
 const PrivacyPolicy = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-
-    const metadata = {
-        title: 'Privacy Policy - Innox App',
-        description: 'Read our Privacy Policy to understand how we collect, use, and protect your personal information when you use our platform.'
-        , keywords: 'Innox, content creators, patent, invest, tokens, direct funding, Web3, crypto marketplace, secure investments, innovative content investment, decentralized finance, blockchain, NFTs, content monetization, safe crypto investments, investment in content creator, invest in content creators'
-        
-    };
+    
     return (
         <>
+        <Helmet>
+    <meta charSet='utf-8' />
+    <title> Privacy Policy - Innox App </title>
+    <meta name='keywords' content='patent, content platform, content creators, own coin, fans, 
+    exclusive offerings, invest in growth, creator economy, Web3,
+     blockchain, cryptocurrency, NFT, social media, tipping, 
+     monetization, community, engagement, empowerment, independence, artist, 
+     musician, gamer, YouTuber, streamer, influencer, podcaster, writer, journalist, 
+     developer, entrepreneur, early access to new content, behind-the-scenes content, 
+     live streams, meet-and-greets, merchandise, NFTs, voting rights, access to a private
+      community, discounts on merchandise, opportunity to earn dividends, invest in content creators, 
+      creator tokens, social tokens'/>
+    <meta name='description' content='Read our Privacy Policy to understand how we collect, use, and protect your personal information when you use our platform.' />
+  </Helmet>
             <div className='background-custom' />
             <Stars />
             <section className='container container-custom flex flex-col min-h-[0] py-10 md:py-16 md:pt-8 mt-24'>

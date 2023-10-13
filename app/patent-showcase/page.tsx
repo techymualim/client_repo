@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import Stars from '@/components/ui/stars';
 import { Subtitle, Paragraph, List } from '@/components/ui/text-components';
 import Image from 'next/image';
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet';
 
 
 const PatentShowcase = () => {
@@ -13,15 +13,23 @@ const PatentShowcase = () => {
 
     }, []);
     
-    const metadata = {
-        title: 'Innovative Patent Showcase - Innox App',
-        description: 'Explore Innox\'s patent showcase, featuring cutting-edge ways to empower content creators and fans through custom ERC-20 tokens. Learn how creators and fans can benefit from this groundbreaking concept, revolutionizing digital content interaction.',
-        keywords: 'patent-pending, intellectual property, Web3 innovation, content creator empowerment, fan engagement, exclusive content, giveaways, merchandise, creator economy, decentralized finance, blockchain technology, NFTs, Web3 ecosystem, future of content creation',
-    };
 
-    
     return (
         <>
+        <Helmet>
+    <meta charSet='utf-8' />
+    <title> Patent - Innox App </title>
+    <meta name='keywords' content='patent, content platform, content creators, own coin, fans, 
+    exclusive offerings, invest in growth, creator economy, Web3,
+     blockchain, cryptocurrency, NFT, social media, tipping, 
+     monetization, community, engagement, empowerment, independence, artist, 
+     musician, gamer, YouTuber, streamer, influencer, podcaster, writer, journalist, 
+     developer, entrepreneur, early access to new content, behind-the-scenes content, 
+     live streams, meet-and-greets, merchandise, NFTs, voting rights, access to a private
+      community, discounts on merchandise, opportunity to earn dividends, invest in content creators, 
+      creator tokens, social tokens'/>
+    <meta name='description' content='Explore Innox patent, featuring cutting-edge ways to empower content creators and fans through custom ERC-20 tokens. Learn how creators and fans can benefit from this groundbreaking concept, revolutionizing digital content interaction.' />
+  </Helmet>
             <div className='background-custom' />
             <Stars />
             <section className='container container-custom flex flex-col min-h-[0] py-10 md:py-16 md:pt-8 mt-24'>

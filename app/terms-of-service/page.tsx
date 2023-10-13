@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import Stars from '@/components/ui/stars';
 import { Subtitle, Paragraph, List } from '@/components/ui/text-components';
+import { Helmet } from 'react-helmet';
 
 const TermsOfService = () => {
     useEffect(() => {
@@ -10,6 +11,21 @@ const TermsOfService = () => {
     }, []);
     return (
         <>
+        <Helmet>
+    <meta charSet='utf-8' />
+    <title> Terms of Service - Innox App </title>
+    <meta name='keywords' content='patent, content platform, content creators, own coin, fans, 
+    exclusive offerings, invest in growth, creator economy, Web3,
+     blockchain, cryptocurrency, NFT, social media, tipping, 
+     monetization, community, engagement, empowerment, independence, artist, 
+     musician, gamer, YouTuber, streamer, influencer, podcaster, writer, journalist, 
+     developer, entrepreneur, early access to new content, behind-the-scenes content, 
+     live streams, meet-and-greets, merchandise, NFTs, voting rights, access to a private
+      community, discounts on merchandise, opportunity to earn dividends, invest in content creators, 
+      creator tokens, social tokens'/>
+    <meta name='description' content='Our Terms of Service outline the rights and responsibilities of users of our platform. By using our platform, you agree to be bound by these terms. Please read them carefully before using our platform.' />
+  </Helmet>
+        
             <div className='background-custom' />
             <Stars />
             <section className='container container-custom flex flex-col min-h-[0] py-10 md:py-16 md:pt-8 mt-24'>

@@ -5,6 +5,7 @@ import Stars from '@/components/ui/stars';
 import Image from 'next/image';
 import Link from 'next/link';
 import Head from 'next/head';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -14,13 +15,20 @@ export default function Page() {
   }, []);
   return (
     <>
-  <Head>
-        <title>About us - Transforming the Digital Investment Landscape</title>
-        <meta
-          name="description"
-          content="Welcome to Innox! Explore our platform that transforms the relationship between content creators and fans into a captivating experience. Learn about creator tokens and our mission to revolutionize the digital investment landscape."
-        />
-      </Head>
+      <Helmet>
+    <meta charSet='utf-8' />
+    <title> About us - Transforming the Digital Investment Landscape </title>
+    <meta name='keywords' content='content platform, content creators, own coin, fans, 
+    exclusive offerings, invest in growth, creator economy, Web3,
+     blockchain, cryptocurrency, NFT, social media, tipping, 
+     monetization, community, engagement, empowerment, independence, artist, 
+     musician, gamer, YouTuber, streamer, influencer, podcaster, writer, journalist, 
+     developer, entrepreneur, early access to new content, behind-the-scenes content, 
+     live streams, meet-and-greets, merchandise, NFTs, voting rights, access to a private
+      community, discounts on merchandise, opportunity to earn dividends, invest in content creators, 
+      creator tokens, social tokens'/>
+    <meta name='description' content='"Welcome to Innox! Explore our platform that transforms the relationship between content creators and fans into a captivating experience. Learn about creator tokens and our mission to revolutionize the digital investment landscape.' />
+  </Helmet>
     
       <div className='background-custom' />
       <Stars />

@@ -194,11 +194,12 @@ const nav = [
     href: "/about-patent-showcase",
     group: true,
     child: [
-      { name: "About us", href: "/about" },
+      { name: "About us", href: "/about_us" },
       { name: "Innox Patent", href: "/patent-showcase" },
     ],
   },
-  { name: "Learn ", href: "/learn", group: false },
+  { name: "Learn ", href: "https://www.youtube.com/@innoxapp/playlists", group: false },
+
 ];
 
 const Action = () => {

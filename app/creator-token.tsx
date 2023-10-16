@@ -31,7 +31,7 @@ export default function CreatorToken() {
   return (
     <section className='container min-h-[fit-content] mb-24 section-mobile-3 px-0'>
       <h3 className='min-w-[282px] text-white text-center text-[30px] md:text-[36px] font-bold mb-16'>
-        Creator Tokens 
+      Personalized In-Platform Currency
       </h3>
       <div className='flex flex-col md:flex-row md:justify-between w-full mr-10'>
         <div className='w-full md:w-[50%] flex md:mt-16 md:mr-20 md:ml-4 md:pt-[70px]'>
@@ -40,12 +40,12 @@ export default function CreatorToken() {
                 Unlock an exceptional opportunity to <span className='text-[#0081DE] font-semibold'>support and grow your cherished content
                 creators</span> 
                 <br />
-                through the revolutionary creator tokens. By strategically purchasing in these tokens, you can
+                through their own in-platform digital currency. By strategically purchasing these currencies, you can
                 
                 gain exclusive privileges,  access to early and premium content, limited-edition 
                 merchandise drops, exhilarating giveaway opportunities, and insider communication 
                 offered by your favorite content creators.
-                As a content creator you will be able to create and deploy your own token 
+                As a content creator you will be able to create and deploy your own custom digital currency
                 in order for your fans to access exclusive content, giveaways, merch drops you share 
                 through your profile page on our platform
                 
@@ -76,14 +76,14 @@ export default function CreatorToken() {
 const Token = () => {
   return (
     <div className="flex flex-col w-full h-[500px] animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16">
-      <p className="text-white text-sm">Offer your fans your own token! Full Ownsership & Personalization</p>
+      <p className="text-white text-sm">Offer your fans your own  currency! Full Ownsership & Personalization</p>
       <br />
       <br />
       <div className="w-full flex mt-6">
         <div className="w-[30%] flex flex-col justify-between">
           <div className="flex flex-col text-center self-end pr-6">
             <p className="text-white text-[18px] font-semibold mt-6">28,981</p>
-            <p className="text-white text-sm">Tokens Sold</p>
+            <p className="text-white text-sm">Units Sold</p>
           </div>
           <div className="flex flex-col text-center self-center">
             <p className="text-white text-[18px] font-semibold mt-6">1120</p>
@@ -92,7 +92,7 @@ const Token = () => {
           <div className="flex flex-col text-center self-end">
             <p className="text-white text-[18px] font-semibold mt-6">$12,34</p>
             
-            <p className="text-white text-sm">Token Price</p>
+            <p className="text-white text-sm">Unit Price</p>
           </div>
         </div>
         <div className="w-[50%] flex flex-col items-center">
@@ -114,7 +114,7 @@ const Token = () => {
 const Content = () => {
   return (
     <div className="flex flex-col w-full h-[500px] animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16">
-      <p className="text-white text-sm">Provide your token holders with early access & exclusive content.</p>
+      <p className="text-white text-sm">Provide your fans with early access & exclusive content.</p>
       <div className="w-full flex justify-center mt-6">
         <div className="flex flex-col w-full md:w-[75%] ">
           <Image 
@@ -181,9 +181,9 @@ const Giveaways = () => {
               </small>
             </div>
             <div className="flex justify-around mt-6">
-              <small className="text-white">$1 in Tokens = 2 Entries</small>
+              <small className="text-white">$1 in Currency = 2 Entries</small>
               <small className="text-white flex">
-                Double your entries by using tokens
+                Double your entries by using creators currency
               </small>
             </div>
           </div>
@@ -196,7 +196,7 @@ const Giveaways = () => {
 const MerchShop = () => {
   return (
     <div className="flex flex-col w-full h-[500px] animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16">
-      <p className="text-white text-sm">Offer fans to buy your merch with tokens.</p>
+      <p className="text-white text-sm">Offer fans to buy your merch with your own currency.</p>
       <div className="w-full flex mt-6">
         <div className="flex flex-col items-center w-[50%]">
           <Image 
@@ -208,7 +208,7 @@ const MerchShop = () => {
           />
           <div className="flex flex-col">
             <p className="text-white font-semibold text-[18px]">Red Storm Shoes</p>
-            <p className="text-white text-sm mb-3">$64,79 or 12 tokens</p>
+            <p className="text-white text-sm mb-3">$64,79 or 12 $BDRAS</p>
             <small className="text-white">BUY</small>
           </div>
         </div>
@@ -222,7 +222,7 @@ const MerchShop = () => {
           />
           <div className="flex flex-col">
             <p className="text-white font-semibold text-[18px]">Hoodie</p>
-            <p className="text-white text-sm mb-3">$24,99 or 3 tokens</p>
+            <p className="text-white text-sm mb-3">$24,99 or 3 $BDRAS</p>
             <small className="text-white">BUY</small>
           </div>
         </div>

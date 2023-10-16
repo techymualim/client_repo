@@ -61,7 +61,7 @@ const CreatorContent = () => {
         </div>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Personalize Token</p>
-          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Navigate to your profile page and create your token. Follow the steps and click the create button to deploy token</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Navigate to your profile page and create your own personalized in platform currency. Follow the steps and click the create button to deploy currency</p>
         </div>
       </div>
       <div className='w-[20%] hidden sm:flex justify-center'>
@@ -76,11 +76,11 @@ const CreatorContent = () => {
       <div className='w-full md:w-[40%] flex flex-col items-start text-center md:text-start'>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mt-[10%] md:mt-[25%] mb-[10%] md:mb-[25%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Verify channel</p>
-          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Verify any of your social media channels. This will serve as proof that you are the legitimate content creator of the token</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Verify any of your social media channels. This will serve as proof that you are the legitimate content creator</p>
         </div>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>List in marketplace</p>
-          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Share your token with your fans so the minting phase can begin and your fans can start acquiring your token and accessing exclusive offerings</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Share your digital currency with your fans so they can purchase it & have access to exclusive offerings</p>
         </div>
       </div>
     </div>
@@ -97,7 +97,7 @@ const UserContent = () => {
         </div>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Support your content creator</p>
-          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Start investing in your favorite content creators and access their exclusive offerings. You will see the tokens you own by accesing your metamask wallet.</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Start supporting your favorite content creators and access their exclusive offerings. You will see the digital currency you own by accesing your wallet.</p>
         </div>
       </div>
       <div className='w-[20%] hidden sm:flex justify-center'>
@@ -112,7 +112,7 @@ const UserContent = () => {
       <div className='w-full md:w-[40%] flex flex-col items-start text-center md:text-start'>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mt-[25%] md:mt-[25%] mb-[25%] md:mb-[25%]'>
           <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Connect wallet</p>
-          <p className='text-sm md:text-base text-slate-500 capitalize mt-3 mb-3'>Connect your wallet to buy tokens. Add funds if needed directly through the metamask app or using your credit card.</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3 mb-3'>Connect your wallet to store your currency. Add funds if needed directly through the metamask app or using your credit card.</p>
           <a href='/learn?topic=account-creation' className='text-sm md:text-base font-bold text-blue-500 capitalize mt-6'>HOW TO CREATE WALLET & ADD FUNDS?</a>
         </div>
       </div>
@@ -144,7 +144,7 @@ const data = [
       <>
         Verify any of your social media channels.{' '}
         <span className='text-slate-600 '>This will serve as proof that you are the legitimate </span>
-        content creator of the token{' '}
+        creator of the digital currency{' '}
       </>
     ),
   },
@@ -155,9 +155,9 @@ const data = [
     node: (
       <>
         Navigate to your profile page and<br />
-        create your token.
+        create your own currency.
         Follow the steps and <span className='text-sky-600 '>click the create button
-          to deploy token</span>
+          to deploy currency</span>
       </>
     ),
   },

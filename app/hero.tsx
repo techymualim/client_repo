@@ -10,11 +10,11 @@ export default function Hero() {
         <div className='flex items-center justify-center gap-4 mb-3'>
           <h1 className='text-[30px] md:text-[36px] font-bold text-center'>
             <span className='text-white capitalize'>
-              Invest and grow in your{' '}
+            Monetize your fanbase & create{' '}
             </span>
             <br />
             <span className='text-white capitalize'>
-              favorite content creators
+            a fun interactive community
             </span>
           </h1>
         </div>
@@ -27,9 +27,9 @@ export default function Hero() {
           />
           <h3 className='text-sm md:text-base font-medium text-center mt-6 mb-10 sm:text-left'>
             <span className='text-slate-500'>
-            Welcome to the first content platform that allows content creators to have their own
+            Discover innovative ways to turn your fanbase into a lucrative source of
             <br />
-            coin that can be used by fans to access exclusive offerings and invest in your growth.
+            income while fostering a lively and interactive community environment. 
             </span>
           </h3>
         </div>

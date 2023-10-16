@@ -3,8 +3,7 @@ import { useCountdown } from '@/hooks/countdown';
 import Image from 'next/image';
 
 export default function Hero() {
-  const [days, hours, minutes, seconds] = useCountdown('October, 20, 2023');
-  const date = [
+  const [days, hours, minutes, seconds] = useCountdown('October, 20, 2023');  const date = [
     { label: 'days', value: days },
     { label: 'hours', value: hours },
     { label: 'mins', value: minutes },

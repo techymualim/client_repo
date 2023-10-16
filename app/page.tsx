@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+
 import CreatorToken from './creator-token';
 import Creators from './creators';
 import Hero from './hero';
@@ -7,13 +8,16 @@ import Working from './working';
 import DirectFunding from './direct-funding';
 import Image from 'next/image';
 import Stars from '@/components/ui/stars';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+import Head from 'next/head';
 
 
 
 export default function Home() {
 
-  <Helmet>
+  return (
+    <>
+     <Head>
     <meta charSet='utf-8' />
     <title> Innox App </title>
     <meta name='keywords' content='content platform, content creators, own coin, fans, 
@@ -27,10 +31,7 @@ export default function Home() {
       creator tokens, social tokens'/>
     <meta name='description' content='Welcome to the first content platform that allows content creators to have their own
 coin that can be used by fans to access exclusive offerings and invest in your growth.' />
-  </Helmet>
-
-  return (
-    <>
+  </Head>
       <Stars />
       <Image
         src={'/assets/images/background-lines.svg'}

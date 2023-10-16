@@ -11,6 +11,7 @@ import Timer from '../timer';
 export default function Page() {
   return (
     <>
+    
       <div className='background-custom' />
       <section className='container [&>*]:relative container-custom'>
       {/*<Hero />

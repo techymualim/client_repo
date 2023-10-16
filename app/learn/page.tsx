@@ -13,6 +13,7 @@ import Stars from '@/components/ui/stars';
 import { Option } from "@/types/option";
 import AccountCreationContent from './account-creation-content';
 import { Helmet } from 'react-helmet-async';
+import Head from 'next/head';
 
 export default function Page() {
   const searchParams = useSearchParams()
@@ -40,13 +41,13 @@ export default function Page() {
     return null;
   }, [starsVisible]);
 
-  <Helmet>
+  <Head>
         <title>Learn - Innox App</title>
         <meta
           name="description"
           content="Explore Innox and learn about content creation, blockchain, tokens, creator tokens, and FAQs. Get insights into the world of content creation and tokenization."
         />
-      </Helmet>
+      </Head>
 
   return (
     <>

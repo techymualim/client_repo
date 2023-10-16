@@ -4,7 +4,8 @@ import React, { useEffect } from 'react';
 import Stars from '@/components/ui/stars';
 import { Subtitle, Paragraph, List } from '@/components/ui/text-components';
 import Image from 'next/image';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
+// import { Helmet } from 'react-helmet-async';
 
 
 const PatentShowcase = () => {
@@ -13,10 +14,11 @@ const PatentShowcase = () => {
 
     }, []);
     
-
+  
+    
     return (
         <>
-        <Helmet>
+         <Head>
     <meta charSet='utf-8' />
     <title> Patent - Innox App </title>
     <meta name='keywords' content='patent, content platform, content creators, own coin, fans, 
@@ -29,7 +31,7 @@ const PatentShowcase = () => {
       community, discounts on merchandise, opportunity to earn dividends, invest in content creators, 
       creator tokens, social tokens'/>
     <meta name='description' content='Explore Innox patent, featuring cutting-edge ways to empower content creators and fans through custom ERC-20 tokens. Learn how creators and fans can benefit from this groundbreaking concept, revolutionizing digital content interaction.' />
-  </Helmet>
+  </Head>
             <div className='background-custom' />
             <Stars />
             <section className='container container-custom flex flex-col min-h-[0] py-10 md:py-16 md:pt-8 mt-24'>

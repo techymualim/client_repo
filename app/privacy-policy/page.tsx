@@ -3,17 +3,19 @@
 import React, { useEffect } from 'react';
 import Stars from '@/components/ui/stars';
 import { Subtitle, Paragraph, List } from '@/components/ui/text-components';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+import Head from 'next/head';
 
 
 const PrivacyPolicy = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    
+
+  
     return (
         <>
-        <Helmet>
+               <Head>
     <meta charSet='utf-8' />
     <title> Privacy Policy - Innox App </title>
     <meta name='keywords' content='patent, content platform, content creators, own coin, fans, 
@@ -26,7 +28,7 @@ const PrivacyPolicy = () => {
       community, discounts on merchandise, opportunity to earn dividends, invest in content creators, 
       creator tokens, social tokens'/>
     <meta name='description' content='Read our Privacy Policy to understand how we collect, use, and protect your personal information when you use our platform.' />
-  </Helmet>
+  </Head>
             <div className='background-custom' />
             <Stars />
             <section className='container container-custom flex flex-col min-h-[0] py-10 md:py-16 md:pt-8 mt-24'>

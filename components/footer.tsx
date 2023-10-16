@@ -92,7 +92,7 @@ const data = [
   {
     title: 'Company ',
     sub: [
-      {name: 'About Us', link: '/about'}, 
+      {name: 'About Us', link: '/about_us'}, 
       {name: 'Contact Us', link: ''}, 
     ],
   },

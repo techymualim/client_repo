@@ -27,6 +27,17 @@ export default function Working() {
           }
         `}
       </style>
+      <div className="flex justify-center text-white my-8">
+  <div className="w-1/3 mx-4">
+    <h2 className="text-2xl font-bold text-center">Our Purpose</h2>
+    <p className="mt-2 text-center max-w-full">We strive to create a fair and transparent ecosystem that benefits both creators and fans, and fosters creativity and innovation in the creator economy industry</p>
+  </div>
+  <div className="w-1/3 mx-4">
+    <h2 className="text-2xl font-bold text-center">Our Mission</h2>
+    <p className="mt-2 text-center max-w-full">To empower content creators by providing a supportive platform that facilitates financial growth and enhances fan engagement through innovative products and systems, fostering greater inclusivity benefits both creators and fans, and fosters creativity and innovation in the creator economy industry</p>
+  </div>
+</div>
+
       <h3 className='min-w-[282px] text-white text-center text-[30px] md:text-[36px] font-bold mb-16'>
         How it works?
       </h3>

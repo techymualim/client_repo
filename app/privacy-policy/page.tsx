@@ -17,17 +17,18 @@ const PrivacyPolicy = () => {
         <>
                <Head>
     <meta charSet='utf-8' />
-    <title> Privacy Policy - Innox App </title>
-    <meta name='keywords' content='patent, content platform, content creators, own coin, fans, 
-    exclusive offerings, invest in growth, creator economy, Web3,
-     blockchain, cryptocurrency, NFT, social media, tipping, 
-     monetization, community, engagement, empowerment, independence, artist, 
-     musician, gamer, YouTuber, streamer, influencer, podcaster, writer, journalist, 
-     developer, entrepreneur, early access to new content, behind-the-scenes content, 
-     live streams, meet-and-greets, merchandise, NFTs, voting rights, access to a private
-      community, discounts on merchandise, opportunity to earn dividends, invest in content creators, 
-      creator tokens, social tokens'/>
-    <meta name='description' content='Read our Privacy Policy to understand how we collect, use, and protect your personal information when you use our platform.' />
+    <title>Privacy Policy | Innox App </title>
+    <meta name='keywords' content='content platform, content creators, own coin, fans,
+exclusive offerings, invest in growth, creator economy, Web3,
+blockchain, cryptocurrency, NFT, social media, tipping,
+monetization, community, engagement, empowerment, independence, artist,
+musician, gamer, YouTuber, streamer, influencer, podcaster, writer, journalist,
+developer, entrepreneur, early access to new content, behind-the-scenes content,
+live streams, meet-and-greets, merchandise, NFTs, voting rights, access to a private
+community, discounts on merchandise, opportunity to earn dividends, invest in content creators,
+creator tokens, social tokens, friend.tech, custom currency, subscription for content creators, giveaways, merchshop
+'/>
+    <meta name='description' content='When you use our Platform to create ERC-20 tokens, we may collect information you provide during the sign-up, token creation, and account management processes. This may include your name, email address, username, linked social media accounts, and other information relevant to your account and token creation activities.' />
   </Head>
             <div className='background-custom' />
             <Stars />

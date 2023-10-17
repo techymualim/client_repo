@@ -20,17 +20,18 @@ const PatentShowcase = () => {
         <>
          <Head>
     <meta charSet='utf-8' />
-    <title> Patent - Innox App </title>
-    <meta name='keywords' content='patent, content platform, content creators, own coin, fans, 
-    exclusive offerings, invest in growth, creator economy, Web3,
-     blockchain, cryptocurrency, NFT, social media, tipping, 
-     monetization, community, engagement, empowerment, independence, artist, 
-     musician, gamer, YouTuber, streamer, influencer, podcaster, writer, journalist, 
-     developer, entrepreneur, early access to new content, behind-the-scenes content, 
-     live streams, meet-and-greets, merchandise, NFTs, voting rights, access to a private
-      community, discounts on merchandise, opportunity to earn dividends, invest in content creators, 
-      creator tokens, social tokens'/>
-    <meta name='description' content='Explore Innox patent, featuring cutting-edge ways to empower content creators and fans through custom ERC-20 tokens. Learn how creators and fans can benefit from this groundbreaking concept, revolutionizing digital content interaction.' />
+    <title>Innox Patent| Innox App</title>
+    <meta name='keywords' content='content platform, content creators, own coin, fans,
+exclusive offerings, invest in growth, creator economy, Web3,
+blockchain, cryptocurrency, NFT, social media, tipping,
+monetization, community, engagement, empowerment, independence, artist,
+musician, gamer, YouTuber, streamer, influencer, podcaster, writer, journalist,
+developer, entrepreneur, early access to new content, behind-the-scenes content,
+live streams, meet-and-greets, merchandise, NFTs, voting rights, access to a private
+community, discounts on merchandise, opportunity to earn dividends, invest in content creators,
+creator tokens, social tokens, friend.tech, custom currency, subscription for content creators, giveaways, merchshop
+'/>
+    <meta name='description' content='This patent introduces an innovative approach to content engagement, enabling content creators to mint their own unique ERC-20 tokens on Innox. These tokens serve as exclusive gateways, granting fans access to personalized content, giveaways, and merchandise offered by creators' />
   </Head>
             <div className='background-custom' />
             <Stars />

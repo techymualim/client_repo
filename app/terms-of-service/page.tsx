@@ -16,17 +16,18 @@ const TermsOfService = () => {
         <>
                <Head>
     <meta charSet='utf-8' />
-    <title> Terms of Service - Innox App </title>
-    <meta name='keywords' content='patent, content platform, content creators, own coin, fans, 
-    exclusive offerings, invest in growth, creator economy, Web3,
-     blockchain, cryptocurrency, NFT, social media, tipping, 
-     monetization, community, engagement, empowerment, independence, artist, 
-     musician, gamer, YouTuber, streamer, influencer, podcaster, writer, journalist, 
-     developer, entrepreneur, early access to new content, behind-the-scenes content, 
-     live streams, meet-and-greets, merchandise, NFTs, voting rights, access to a private
-      community, discounts on merchandise, opportunity to earn dividends, invest in content creators, 
-      creator tokens, social tokens'/>
-    <meta name='description' content='Our Terms of Service outline the rights and responsibilities of users of our platform. By using our platform, you agree to be bound by these terms. Please read them carefully before using our platform.' />
+    <title>Terms of Service | Innox App</title>
+    <meta name='keywords' content='content platform, content creators, own coin, fans,
+exclusive offerings, invest in growth, creator economy, Web3,
+blockchain, cryptocurrency, NFT, social media, tipping,
+monetization, community, engagement, empowerment, independence, artist,
+musician, gamer, YouTuber, streamer, influencer, podcaster, writer, journalist,
+developer, entrepreneur, early access to new content, behind-the-scenes content,
+live streams, meet-and-greets, merchandise, NFTs, voting rights, access to a private
+community, discounts on merchandise, opportunity to earn dividends, invest in content creators,
+creator tokens, social tokens, friend.tech, custom currency, subscription for content creators, giveaways, merchshop
+'/>
+    <meta name='description' content='Innox is a marketplace that enables creators to create thier own tokens and list them for sale to their fans ("Buyers"). Users can buy directly from our platform and utilize this tokens to access the creators exclusive offerings' />
   </Head>
             <div className='background-custom' />
             <Stars />

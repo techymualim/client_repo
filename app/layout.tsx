@@ -1,10 +1,12 @@
+'use client'
 import { Analytics } from '@vercel/analytics/react';
 import Navbar from '@/components/navbar';
 import './globals.css';
 import Footer from '@/components/footer';
 import AnimatePresence from '@/context/animate-presence';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { hotjar } from 'react-hotjar'
 
 
 export default function RootLayout({
@@ -12,6 +14,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    hotjar.initialize(3612664, 6)
+  }, [])
   return (
     <html lang='en'>
       <body className="font-poppins-regular">

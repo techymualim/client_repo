@@ -27,17 +27,29 @@ export default function Working() {
           }
         `}
       </style>
+      <br />
+      <br />
       <div className="flex justify-center text-white my-8">
   <div className="w-1/3 mx-4">
     <h2 className="text-2xl font-bold text-center">Our Purpose</h2>
+    <br />
     <p className="mt-2 text-center max-w-full">We strive to create a fair and transparent ecosystem that benefits both creators and fans, and fosters creativity and innovation in the creator economy industry</p>
   </div>
   <div className="w-1/3 mx-4">
     <h2 className="text-2xl font-bold text-center">Our Mission</h2>
-    <p className="mt-2 text-center max-w-full">To empower content creators by providing a supportive platform that facilitates financial growth and enhances fan engagement through innovative products and systems, fostering greater inclusivity benefits both creators and fans, and fosters creativity and innovation in the creator economy industry</p>
+    <br />
+    <p className="mt-2 text-center max-w-full">To empower content creators by providing a supportive platform that facilitates financial growth and enhances fan engagement through innovative products and systems.</p>
+    <br />
+    <br />
+    <br />
   </div>
+  <br />
+  <br />
 </div>
 
+<br />
+<br />
+<br />
       <h3 className='min-w-[282px] text-white text-center text-[30px] md:text-[36px] font-bold mb-16'>
         How it works?
       </h3>
@@ -66,12 +78,12 @@ const CreatorContent = () => {
     <div className='flex flex-col md:flex-row animate-in duration-300 fade-out-0 slide-out-to-top-12 fade-in-25 slide-in-from-bottom-16 w-full px-6 md:px-0'>
       <div className='w-full md:w-[40%] flex flex-col items-end text-center md:text-start'>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%] mb-[10%] md:mb-[25%]'>
-          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Set up your wallet</p>
-          <p className='text-sm md:text-base text-slate-500 capitalize mt-3 mb-3'>Create an account as a “content creator” by connecting your wallet</p>
+          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Set up your digital wallet</p>
+          <p className='text-sm md:text-base text-slate-500 capitalize mt-3 mb-3'>Create an account as a content creator by connecting your digital wallet</p>
           <a href='/learn?topic=account-creation' className='text-sm md:text-base font-bold text-blue-500 capitalize mt-6'>HOW TO CREATE WALLET?</a>
         </div>
         <div className='h-[50%] md:h-[25%] w-full md:w-[50%]'>
-          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Personalize Token</p>
+          <p className=' text-white text-[15px] md:text-[18px] font-semibold capitalize'>Custom In-platform Digital Currency</p>
           <p className='text-sm md:text-base text-slate-500 capitalize mt-3'>Navigate to your profile page and create your own personalized in platform currency. Follow the steps and click the create button to deploy currency</p>
         </div>
       </div>
@@ -162,11 +174,11 @@ const data = [
   {
     icon: '/assets/images/transition/brush.svg',
     transitionIcon: '/assets/images/dash-up.svg',
-    title: 'Personalize Token',
+    title: 'Personalize Currency',
     node: (
       <>
         Navigate to your profile page and<br />
-        create your own currency.
+        create your own in-platform currency.
         Follow the steps and <span className='text-sky-600 '>click the create button
           to deploy currency</span>
       </>

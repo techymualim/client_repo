@@ -25,7 +25,7 @@ export default function HeroIllustrations() {
       <p className='text-sm md:text-base text-slate-500 capitalize mt-3 max-w-md md:max-xs'>
         Access exclusive content, giveaways,
         <br /> merch drops and more through
-        <br />creators in-platform  currency
+        <br />creators digital credits. 
       </p>
     </div>
 

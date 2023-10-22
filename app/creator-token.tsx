@@ -31,33 +31,19 @@ export default function CreatorToken() {
   return (
     <section className='container min-h-[fit-content] mb-24 section-mobile-3 px-0'>
       <h3 className='min-w-[282px] text-white text-center text-[30px] md:text-[36px] font-bold mb-16'>
-      Personalized In-Platform Currency
+      Custom In-Platform Currency
       </h3>
       <div className='flex flex-col md:flex-row md:justify-between w-full mr-10'>
         <div className='w-full md:w-[50%] flex md:mt-16 md:mr-20 md:ml-4 md:pt-[70px]'>
         <div className='flex flex-col text-center md:text-start px-6 md:px-0'>
               <p className='text-sm md:text-base font-large text-white mb-8 md:mb-24'>
-                Unlock an exceptional opportunity to <span className='text-[#0081DE] font-semibold'>support and grow your cherished content
-                creators</span> 
-                <br />
-                through their own in-platform digital currency. By strategically purchasing these currencies, you can
-                
-                gain exclusive privileges,  access to early and premium content, limited-edition 
-                merchandise drops, exhilarating giveaway opportunities, and insider communication 
-                offered by your favorite content creators.
-                As a content creator you will be able to create and deploy your own custom digital currency
-                in order for your fans to access exclusive content, giveaways, merch drops you share 
-                through your profile page on our platform
+              Our most valuable and exciting product which allows content creators to accelerate & increase their revenue while offering a unique and fun experience to their fanbase.
+              Allowing your fans to access your exclusive offerings through the use of your custom digital currency. Create a more vibrant and engaging community
                 
               </p>
               <p className='text-sm md:text-base font-large text-white'>
-              Explore a realm where <span className='text-[#0081DE] font-semibold'> creativity and innovation converge </span>, offering distinctive experiences for creators and their fans through cutting-edge technology.
-                
-                Don't miss out on this exciting chance to engage on a deeper level with the creators you truly support. 
-              
-                Join the movement and witness the transformative potential Innox offers as we usher
-                
-                in a new era of support & engagement for entertainment industry.
+              Offer your fans exclusive content in order to see more of what goes in behind the scenes of your videos, bonus content, access to private community and more. 
+              Your fans will pay a monthly subscription in order to access your exclusive content, either through your custom digital currency or through the use of fiat currency ($) (100% revenue split first 6 months)
               </p>
           </div>
         </div>
